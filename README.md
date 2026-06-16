@@ -1,7 +1,7 @@
 # EXPRES Improvement & Performance — Agentic Power BI Development
 
 > **Access:** This repository is maintained by the **EXPRES I&P team** only.  
-> Only team members are permitted to commit, open pull requests, or merge changes. If you are not part of the team, please do not push directly to this repository.
+> Only team members are permitted to commit, open pull requests, or merge changes. If you are not part of the team and want to contribute, please contact the the team for further dialog.
 
 ---
 
