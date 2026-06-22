@@ -4409,7 +4409,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "RC Maturity": {
+			          "Resource Classification": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4419,7 +4419,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Resource Classification": {
+			          "RC Maturity": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

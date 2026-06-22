@@ -2,12 +2,20 @@ table _MeasureTable
 	lineageTag: 47894e6e-3462-488b-abb7-4cf20d487757
 
 	measure _cumulativeP50_new =
-			
-			
-			var calc = CALCULATE(sum(fact_volumes[amount]), Filter(ALLSELECTED('dim_projects'), 'dim_projects'[DG3Index] <= Max('dim_projects'[DG3Index])))
-			
-			
-			return calc
+			// Running total sorted by DG3Year (ascending) then asset (ascending)
+			var currentYear = MAX('dim_projects'[DG3Year])
+			var currentAsset = MAX('dim_projects'[asset])
+			return
+				CALCULATE(
+					SUM(fact_volumes[amount]),
+					FILTER(
+						ALL('dim_projects'),
+						OR(
+							'dim_projects'[DG3Year] < currentYear,
+							AND('dim_projects'[DG3Year] = currentYear, 'dim_projects'[asset] <= currentAsset)
+						)
+					)
+				)
 		lineageTag: 5027a3bf-187b-475f-96fd-046c7512ffeb
 
 	column 1
