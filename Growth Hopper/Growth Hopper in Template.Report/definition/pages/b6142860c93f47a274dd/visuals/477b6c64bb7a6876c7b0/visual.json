@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "477b6c64bb7a6876c7b0",
+  "position": {
+    "x": 85,
+    "y": 220,
+    "z": 0,
+    "height": 200,
+    "width": 1752,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Use this template as guidance and inspiration to build Power BI reports together with the ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "Aker BP theme",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    },
+                    "url": "https://akerbp.sharepoint.com/sites/abp-team-1255/_layouts/15/download.aspx?UniqueId=84282cde725b4f8695cf83d7cb4b6f4c&e=GyADoN"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "We attempt to cover the most commonly used elements and scenarios as a starting point.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Please send feedback and suggestions for additions to: ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "analytics@akerbp.com.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    },
+                    "url": "mailto:analytics@akerbp.com."
+                  },
+                  {
+                    "value": " We want to build on this based on your needs! ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Elements from this .pbix file can be copied into your own file and reused.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

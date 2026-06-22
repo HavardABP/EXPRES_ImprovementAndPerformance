@@ -1,0 +1,239 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "68837ea149c6a0d5d61c",
+  "position": {
+    "x": 85,
+    "y": 220,
+    "z": 8000,
+    "height": 370,
+    "width": 400,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Background",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt",
+                      "color": "#2f2f2f"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Use this",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "Background",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    },
+                    "url": "https://akerbp.sharepoint.com/:i:/r/sites/abp-team-1255/Shared%20Documents/2.6%20-%20Data%20Analytics/Analytics/01%20Metodikk%20%26%20verkt%C3%B8y/07%20Templates/Background/Data%20Analytics_PowerBI_Plain_Background.png?csf=1&web=1&e=1ITdjT"
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "for all report pages. Download the file locally.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "How to apply",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Navigate to the Visualizations pane on the right corner in the report view.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Under \"Build visual\" there is a button named \"Format you report page\".",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Choose Canvas Background",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Browse for the image",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Adjust image fit to Fill",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Adjust Transparency to 0%",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#444444"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "' Background text box'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D9D9D9'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

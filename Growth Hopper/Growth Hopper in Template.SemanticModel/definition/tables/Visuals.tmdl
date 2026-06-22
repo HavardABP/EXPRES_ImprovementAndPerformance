@@ -1,0 +1,89 @@
+table Visuals
+	isHidden
+	lineageTag: d4a365cb-2729-4749-85b0-070e55416fa8
+
+	measure 'Show Scatter Bar Chart' =
+			
+			IF(
+			    SELECTEDVALUE( Visuals[Visual Type] )
+			    = "Scatter Bar Chart" ,
+			        1 ,
+			        0
+			)
+		formatString: 0
+		isHidden
+		lineageTag: 600497e1-9b1f-47f7-bfd5-1e6ae910e2b5
+
+		changedProperty = IsHidden
+
+	column 'Visual Type Group'
+		dataType: string
+		isHidden
+		lineageTag: eddf12ea-cfb9-48fb-b08d-0a797dc79ac7
+		summarizeBy: none
+		sourceColumn: Visual Type Group
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visual Type Group Explanation'
+		dataType: string
+		isHidden
+		lineageTag: e406b033-a968-46d8-973c-88705034267f
+		summarizeBy: none
+		sourceColumn: Visual Type Group Explanation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visual Type'
+		dataType: string
+		isHidden
+		lineageTag: 0b97f99b-3104-4d73-81a6-a6825a45014b
+		summarizeBy: none
+		sourceColumn: Visual Type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Viual Type Explanation'
+		dataType: string
+		isHidden
+		lineageTag: dac21d72-2d71-402a-b45a-a3cb7be3012e
+		summarizeBy: none
+		sourceColumn: Viual Type Explanation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Microsoft Docs'
+		dataType: string
+		isHidden
+		lineageTag: 16e33dc6-1aa2-47a7-9c0b-c1b90fd40561
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: Microsoft Docs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Visuals = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("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", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Visual Type Group" = _t, #"Visual Type Group Explanation" = _t, #"Visual Type" = _t, #"Viual Type Explanation" = _t, #"Microsoft Docs" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Visual Type Group", type text}, {"Visual Type Group Explanation", type text}, {"Visual Type", type text}, {"Viual Type Explanation", type text}, {"Microsoft Docs", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

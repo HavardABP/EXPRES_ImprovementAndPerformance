@@ -1,0 +1,35 @@
+table dim_assets
+	lineageTag: f2cb0832-c502-4ad8-b952-1375ae1d178b
+
+	column asset
+		dataType: string
+		lineageTag: b19b6a42-40a2-42e5-b4ad-2f0347097e9b
+		summarizeBy: none
+		sourceColumn: asset
+
+		annotation SummarizationSetBy = Automatic
+
+	column Index
+		dataType: int64
+		formatString: 0
+		lineageTag: aa227119-15a4-4da3-9b57-a1ba6a46ca85
+		summarizeBy: none
+		sourceColumn: Index
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_assets = m
+		mode: import
+		source =
+				let
+				    Source = dim_projects,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"asset"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns"),
+				    #"Added Index" = Table.AddIndexColumn(#"Removed Duplicates", "Index", 1, 1, Int64.Type)
+				in
+				    #"Added Index"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

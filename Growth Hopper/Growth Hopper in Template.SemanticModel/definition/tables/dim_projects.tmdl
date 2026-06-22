@@ -1,0 +1,582 @@
+table dim_projects
+	lineageTag: 29f2f3b1-194c-4247-8475-f78618eea938
+
+	column project_code
+		dataType: string
+		lineageTag: 564fe71f-7f07-461a-a0d0-be9ccd7db811
+		summarizeBy: none
+		sourceColumn: project_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column asset
+		dataType: string
+		lineageTag: 7ae57e0a-316d-44b0-ab99-9762e68aefe8
+		summarizeBy: none
+		sourceColumn: asset
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_name
+		dataType: string
+		lineageTag: 3b62507d-b7c7-4e47-9f46-0ea414f02566
+		summarizeBy: none
+		sourceColumn: project_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column wi_percent
+		dataType: double
+		lineageTag: 58d10820-a551-4eab-b6d8-6d346f1acb59
+		summarizeBy: sum
+		sourceColumn: wi_percent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column comments
+		dataType: string
+		lineageTag: 868b85da-e58b-422f-8bcf-7c592da672cc
+		summarizeBy: none
+		sourceColumn: comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_create_date
+		dataType: string
+		lineageTag: 1ac07de8-d323-46e0-a905-b5301cf9a251
+		summarizeBy: none
+		sourceColumn: project_create_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_start_date
+		dataType: string
+		lineageTag: 259766d6-b972-41c0-89af-a18403f149ba
+		summarizeBy: none
+		sourceColumn: project_start_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_license_budget
+		dataType: string
+		lineageTag: 82450093-bde5-4440-92c3-60813b8b42bf
+		summarizeBy: none
+		sourceColumn: in_license_budget
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_company_budget
+		dataType: string
+		lineageTag: 8b52de93-d43a-4487-897e-edcff20ddb7b
+		summarizeBy: none
+		sourceColumn: in_company_budget
+
+		annotation SummarizationSetBy = Automatic
+
+	column npd_resource_classification
+		dataType: string
+		lineageTag: 8454edef-d9b2-434f-a227-8d77fe78a229
+		summarizeBy: none
+		sourceColumn: npd_resource_classification
+
+		annotation SummarizationSetBy = Automatic
+
+	column area
+		dataType: string
+		lineageTag: fe3b34ff-6014-4451-abfc-8ab2e74edd43
+		summarizeBy: none
+		sourceColumn: area
+
+		annotation SummarizationSetBy = Automatic
+
+	column subarea_field
+		dataType: string
+		lineageTag: ca28026f-c4eb-4123-9842-733285b265bc
+		summarizeBy: none
+		sourceColumn: subarea_field
+
+		annotation SummarizationSetBy = Automatic
+
+	column license_and_budget
+		dataType: string
+		lineageTag: 29dbdd66-fcb2-4092-94a8-e68e55ae76d9
+		summarizeBy: none
+		sourceColumn: license_and_budget
+
+		annotation SummarizationSetBy = Automatic
+
+	column op_non_op
+		dataType: string
+		lineageTag: 022e8b30-a3ab-46e2-a64c-f071690d8e76
+		summarizeBy: none
+		sourceColumn: op_non_op
+
+		annotation SummarizationSetBy = Automatic
+
+	column classification
+		dataType: string
+		lineageTag: 8a9a991c-3448-4891-bcfb-272a167f3ddb
+		summarizeBy: none
+		sourceColumn: classification
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_project_dev_phase
+		dataType: string
+		lineageTag: 70702283-624d-4dec-b37f-fb3ab1eba32a
+		summarizeBy: none
+		sourceColumn: current_project_dev_phase
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_statetment_of_reserves_classification
+		dataType: string
+		lineageTag: 03c4839e-d049-4dc1-8fee-1cc672c438d1
+		summarizeBy: none
+		sourceColumn: annual_statetment_of_reserves_classification
+
+		annotation SummarizationSetBy = Automatic
+
+	column specifics
+		dataType: string
+		lineageTag: 0cf4aa4b-13b4-4dc8-ad41-79a2977e770b
+		summarizeBy: none
+		sourceColumn: specifics
+
+		annotation SummarizationSetBy = Automatic
+
+	column prms_complaint
+		dataType: string
+		lineageTag: ba13383d-f226-47ef-82f7-7df92f963341
+		summarizeBy: none
+		sourceColumn: prms_complaint
+
+		annotation SummarizationSetBy = Automatic
+
+	column prms_duplicate
+		dataType: string
+		lineageTag: 2fcd3d62-a898-4b3f-9a5b-5d2c3231fb92
+		summarizeBy: none
+		sourceColumn: prms_duplicate
+
+		annotation SummarizationSetBy = Automatic
+
+	column capital_allocation
+		dataType: string
+		lineageTag: 1e6f6de3-8e82-48e7-adf0-2cbf1a70072b
+		summarizeBy: none
+		sourceColumn: capital_allocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column cop_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ee1e2f15-b4b4-470f-be45-f0944858ede9
+		summarizeBy: none
+		sourceColumn: cop_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dg0_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 234babba-224b-466d-9716-6d2f07ece49c
+		summarizeBy: none
+		sourceColumn: dg0_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dg1_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e177f36c-db6d-4263-858b-017e7e152c03
+		summarizeBy: none
+		sourceColumn: dg1_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dg2_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 94ca974f-a890-4fda-bcff-04fc9fad37c8
+		summarizeBy: none
+		sourceColumn: dg2_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dg3_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f3de6d6b-3b12-48be-adb0-e13f44429f3e
+		summarizeBy: none
+		sourceColumn: dg3_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dg4_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7bc5db71-1686-40dd-a04c-0149c2e2f31e
+		summarizeBy: none
+		sourceColumn: dg4_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column first_oil
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8e33448b-ee3d-42ee-b016-f6680e78441f
+		summarizeBy: none
+		sourceColumn: first_oil
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column name_in_previous_version
+		dataType: string
+		lineageTag: a7d24b57-f1ec-4245-b274-bc5ac342858e
+		summarizeBy: none
+		sourceColumn: name_in_previous_version
+
+		annotation SummarizationSetBy = Automatic
+
+	column reserves_booking_date
+		dataType: string
+		lineageTag: 966f5e7b-634b-4484-b49d-37942d5f31de
+		summarizeBy: none
+		sourceColumn: reserves_booking_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column special_tax_capital_uplift_old_transition_rules
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9f5ae123-e183-401a-9a3e-7c5ad22cd1b8
+		summarizeBy: none
+		sourceColumn: special_tax_capital_uplift_old_transition_rules
+
+		annotation SummarizationSetBy = Automatic
+
+	column gross_net
+		dataType: double
+		lineageTag: 50b5728b-984f-46b6-b8ef-3e8240df532b
+		summarizeBy: sum
+		sourceColumn: gross_net
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column active
+		dataType: string
+		lineageTag: 62105c19-8986-441f-878c-45d2ad5b64c6
+		summarizeBy: none
+		sourceColumn: active
+
+		annotation SummarizationSetBy = Automatic
+
+	column version
+		dataType: string
+		lineageTag: 72ede454-4b0e-4029-a9d1-d55b88e2bdcf
+		summarizeBy: none
+		sourceColumn: version
+
+		annotation SummarizationSetBy = Automatic
+
+	column differential_mapping
+		dataType: string
+		lineageTag: 3862b7a8-1d98-4f52-8507-a38a1d6276b2
+		summarizeBy: none
+		sourceColumn: differential_mapping
+
+		annotation SummarizationSetBy = Automatic
+
+	column gas_factor
+		dataType: string
+		lineageTag: e421cc09-bca0-4a7d-aeb9-305c64d12646
+		summarizeBy: none
+		sourceColumn: gas_factor
+
+		annotation SummarizationSetBy = Automatic
+
+	column gas_entry
+		dataType: string
+		lineageTag: 26e3a756-4821-4a3f-8008-7d4d47c97f0a
+		summarizeBy: none
+		sourceColumn: gas_entry
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_category
+		dataType: double
+		lineageTag: b173befe-f5d0-44c5-b778-8c3330861a74
+		summarizeBy: sum
+		sourceColumn: project_category
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column project_description
+		dataType: double
+		lineageTag: 5afe9a45-1df9-453b-b405-a65452cda19a
+		summarizeBy: sum
+		sourceColumn: project_description
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column status
+		dataType: double
+		lineageTag: 70f1ae7b-b5bc-464b-9850-14a17b6d654b
+		summarizeBy: sum
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column field_area
+		dataType: double
+		lineageTag: c654984f-5f62-4a7e-81f3-405f48f35584
+		summarizeBy: sum
+		sourceColumn: field_area
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rc_maturity
+		dataType: double
+		lineageTag: eff4b913-3479-4657-a918-571ee0204b89
+		summarizeBy: sum
+		sourceColumn: rc_maturity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column commercialization_probability
+		dataType: double
+		lineageTag: 228acc8f-a755-441b-a30b-86ab0a7334c9
+		summarizeBy: sum
+		sourceColumn: commercialization_probability
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column expres_comment
+		dataType: double
+		lineageTag: cdd863b0-05fb-4db2-8717-4d6d3d0f25e4
+		summarizeBy: sum
+		sourceColumn: expres_comment
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column development_challenge_classification
+		dataType: double
+		lineageTag: be7bf8ce-3233-485f-9eca-090b752fdb50
+		summarizeBy: sum
+		sourceColumn: development_challenge_classification
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reservoir_evaluation_and_data_acquisition
+		dataType: string
+		lineageTag: 620ce968-5ac2-48d1-bbb6-0b29359628b9
+		summarizeBy: none
+		sourceColumn: reservoir_evaluation_and_data_acquisition
+
+		annotation SummarizationSetBy = Automatic
+
+	column drilling_technology
+		dataType: string
+		lineageTag: f378437a-b68d-44d5-b93e-2bb22965628d
+		summarizeBy: none
+		sourceColumn: drilling_technology
+
+		annotation SummarizationSetBy = Automatic
+
+	column chemicals
+		dataType: double
+		lineageTag: 1902cd79-c5b7-410a-bab6-9be529bb90fa
+		summarizeBy: sum
+		sourceColumn: chemicals
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column completion
+		dataType: string
+		lineageTag: afd80796-e32c-404d-b984-82096f5be49d
+		summarizeBy: none
+		sourceColumn: completion
+
+		annotation SummarizationSetBy = Automatic
+
+	column water_shutoff
+		dataType: double
+		lineageTag: 8f117315-5e0c-4ac6-a38f-dc1278b229da
+		summarizeBy: sum
+		sourceColumn: water_shutoff
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_subsurface_tech
+		dataType: string
+		lineageTag: 2cc0bca8-c72b-4247-8dec-85ee619a0d50
+		summarizeBy: none
+		sourceColumn: non_subsurface_tech
+
+		annotation SummarizationSetBy = Automatic
+
+	column exp_growth_category
+		dataType: double
+		lineageTag: 882b8261-53bc-4fea-a8ea-319350c21e31
+		summarizeBy: sum
+		sourceColumn: exp_growth_category
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column included_in_adp
+		dataType: string
+		lineageTag: d82b48ef-9a05-49e8-82c8-67038907ede7
+		summarizeBy: none
+		sourceColumn: included_in_adp
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_producing
+		dataType: string
+		lineageTag: 698c09a2-906d-4995-a20f-67792314cd35
+		summarizeBy: none
+		sourceColumn: is_producing
+
+		annotation SummarizationSetBy = Automatic
+
+	column pvm_grouping
+		dataType: string
+		lineageTag: 37211775-8812-4945-a938-f26ba906803b
+		summarizeBy: none
+		sourceColumn: pvm_grouping
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_plan
+		dataType: string
+		lineageTag: a811765c-3148-48f6-991c-f464b21165ea
+		summarizeBy: none
+		sourceColumn: current_plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_specific_id
+		dataType: string
+		lineageTag: 38973324-34cd-4ef6-afd4-97a8970aafb4
+		summarizeBy: none
+		sourceColumn: project_specific_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fabric_last_updated_on
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 14572273-62ad-43d4-af59-87acd64f24b1
+		summarizeBy: none
+		sourceColumn: fabric_last_updated_on
+
+		annotation SummarizationSetBy = Automatic
+
+	column #OfTechnologies
+		dataType: string
+		lineageTag: 5c5541d0-17cb-4bb7-96a0-d62f7ad609e0
+		summarizeBy: none
+		sourceColumn: #OfTechnologies
+
+		annotation SummarizationSetBy = Automatic
+
+	column AllTechReqs
+		dataType: string
+		lineageTag: b35a7aaa-fb4e-4b59-8b96-16004e875859
+		summarizeBy: none
+		sourceColumn: AllTechReqs
+
+		annotation SummarizationSetBy = Automatic
+
+	column isProspect = If(Isblank(dim_projects[npd_resource_classification]), BLANK(), if(CONTAINSSTRING(dim_projects[npd_resource_classification], "8"), "Prospect", "Project"))
+		lineageTag: e17fc441-d677-4ca5-8307-ef47cf4fe7c3
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column DG3Year = year(dim_projects[dg3_date])
+		formatString: 0
+		lineageTag: ade77a83-d870-4064-be1c-c83e19d91155
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column _assetIndex = related(dim_assets[Index])
+		formatString: 0
+		lineageTag: 3bccced1-aba9-4ddd-a69a-29c2aa792ad4
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column DG3Index =
+			
+			//added to numerically order projects in the DG3 Volume chart
+			'dim_projects'[DG3Year] * 1000000 + dim_projects[_assetIndex]
+		formatString: 0
+		lineageTag: 8ccbb005-07b3-433e-a9c5-d5feb9e78d38
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_projects = m
+		mode: import
+		source = ```
+				let
+				    Source = Sql.Database("obax4o2iqosevp5oa2r6dbtune-2dhddioar5aebauc4huzjvnrve.datawarehouse.fabric.microsoft.com", "wh_gold_finance"),
+				    dbt_gold_business_plan_reporting_dim_ibm_current_plan_version_project_information = Source{[Schema="dbt_gold_business_plan_reporting",Item="dim_ibm_current_plan_version_project_information"]}[Data],
+				    // counts the number of "yes" in the technology columns 
+				    #"Added #ofTechnoliges" = Table.AddColumn(dbt_gold_business_plan_reporting_dim_ibm_current_plan_version_project_information, "#OfTechnologies", each List.Count(List.Select({[reservoir_evaluation_and_data_acquisition], [drilling_technology], [chemicals], [completion], [water_shutoff], [non_subsurface_tech]}, each _ = "Yes"))),
+				    #"Added Custom" = Table.AddColumn(#"Added #ofTechnoliges", "AllTechReqs", each Text.Combine(List.Select({if [reservoir_evaluation_and_data_acquisition] = "Yes" then "res_eval" else null, if [drilling_technology] = "Yes" then "drilling_technology" else null, if [chemicals] = "Yes" then "chemicals" else null, if [completion] = "Yes" then "completion" else null, if [water_shutoff] = "Yes" then "water_shutoff" else null, if [non_subsurface_tech] = "Yes" then "non_subsurface_tech" else null}, each _ <> null), ", ")),
+				    #"change date types" = Table.TransformColumnTypes(#"Added Custom", {{"cop_date", type date}, {"dg0_date", type date}, {"dg1_date", type date}, {"dg2_date", type date}, {"dg3_date", type date}, {"dg4_date", type date}, {"first_oil", type date}}, "nb-NO"),
+				    // filter out rc 0-3 as we are only interested in 4-8
+				    #"Fitlered RC" = Table.SelectRows(#"change date types", each ([npd_resource_classification] <> null and [npd_resource_classification] <> "RC 0+1" and [npd_resource_classification] <> "RC 2A" and [npd_resource_classification] <> "RC 2F" and [npd_resource_classification] <> "RC 3F"))
+				in
+				    #"Fitlered RC"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
