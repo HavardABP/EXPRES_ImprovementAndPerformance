@@ -1,10 +1,10 @@
 table _MeasureTable
 	lineageTag: 47894e6e-3462-488b-abb7-4cf20d487757
 
-	measure _cumulativeP50_new = ```
+	measure _cumulativeP50_new =
 			// Running total sorted by DG3Year (ascending) then asset (ascending)
 			// Only counts from the filtered year onwards (respects filters)
-			var minYear = MIN(ALLSELECTED('dim_projects'[DG3Year]))
+			var minYear = MINX(ALLSELECTED('dim_projects'[DG3Year]), 'dim_projects'[DG3Year])
 			var currentYear = MAX('dim_projects'[DG3Year])
 			var currentAsset = MAX('dim_projects'[asset])
 			return
@@ -21,7 +21,6 @@ table _MeasureTable
 						)
 					)
 				)
-			```
 		lineageTag: 5027a3bf-187b-475f-96fd-046c7512ffeb
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
