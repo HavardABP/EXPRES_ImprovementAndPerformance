@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "e49a991f40be0b3e166e",
+  "name": "f4a9a5aa823e2817692d",
   "position": {
     "x": 90,
     "y": 80,
-    "z": 3000,
+    "z": 1000,
     "height": 100,
     "width": 800,
     "tabOrder": 0
@@ -38,7 +38,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Per Asset",
+                    "value": "Per Project",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "20pt",

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "b012b87199d8b0dc952e",
+  "name": "b7397e7919775857d69e",
   "position": {
-    "x": 86.309680042882761,
-    "y": 299.81257278054011,
-    "z": 8000,
-    "height": 760.88796879909808,
-    "width": 1748.9066745531507,
-    "tabOrder": 13000
+    "x": 86,
+    "y": 300,
+    "z": 5000,
+    "height": 760,
+    "width": 1328,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "lineStackedColumnComboChart",
@@ -38,12 +38,13 @@
                       "Entity": "dim_projects"
                     }
                   },
-                  "Property": "asset"
+                  "Property": "project_name"
                 }
               },
-              "queryRef": "dim_projects.asset",
-              "nativeQueryRef": "asset",
-              "active": true
+              "queryRef": "dim_projects.project_name",
+              "nativeQueryRef": "Project",
+              "active": true,
+              "displayName": "Project"
             }
           ]
         },
@@ -76,12 +77,11 @@
                       "Entity": "_MeasureTable"
                     }
                   },
-                  "Property": "_cumulativeP50_new"
+                  "Property": "_cumulativeVol_Project"
                 }
               },
-              "queryRef": "_MeasureTable._cumulativeP50_new",
-              "nativeQueryRef": "Cumulative Volume",
-              "displayName": "Cumulative Volume"
+              "queryRef": "_MeasureTable._cumulativeVol_Project",
+              "nativeQueryRef": "_cumulativeVol_Project"
             }
           ]
         }
@@ -97,19 +97,6 @@
                   }
                 },
                 "Property": "DG3Year"
-              }
-            },
-            "direction": "Ascending"
-          },
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dim_projects"
-                  }
-                },
-                "Property": "asset"
               }
             },
             "direction": "Ascending"
@@ -3068,6 +3055,7 @@
             }
           ]
         },
+        "howCreated": "User",
         "objects": {
           "general": [
             {
@@ -3097,7 +3085,8 @@
             "Property": "_cumulativeP50_new"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "howCreated": "User"
       },
       {
         "name": "489d9c7591d18cd350ba",

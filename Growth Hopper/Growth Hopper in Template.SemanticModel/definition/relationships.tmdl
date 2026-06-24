@@ -21,6 +21,12 @@ relationship 3ec65e5a-4a46-c201-6cb6-75559a998541
 	toColumn: dim_dates.Date
 
 relationship AutoDetected_00a07a8b-ed34-4649-b4e6-29ce76b0bae3
+	crossFilteringBehavior: bothDirections
 	fromColumn: dim_projects.asset
 	toColumn: dim_assets.asset
 
+
+relationship AutoDetected_Assets_to_dim_assets
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_assets.asset
+	toColumn: Assets.Asset

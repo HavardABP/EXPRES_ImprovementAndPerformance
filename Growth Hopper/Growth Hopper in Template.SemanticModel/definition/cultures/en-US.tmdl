@@ -12082,6 +12082,28 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.75
 			          }
+			        }
+			      ]
+			    },
+			    "entity__MeasureTable.volume_mmboe_current_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_MeasureTable",
+			          "ConceptualProperty": "volume (mmboe) current year+"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "volume (mmboe) current year+": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Volume": {
+			            "State": "Generated",
+			            "Weight": 0.675
+			          }
 			        },
 			        {
 			          "Volume (boe)": {
@@ -12091,6 +12113,127 @@ cultureInfo en-US
 			              "Agent": "PowerBI.VisualColumnRename"
 			            },
 			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_project.DG3_year_relative_to_today": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_projects",
+			          "ConceptualProperty": "DG3YearRelativeToToday"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DG3 year relative to today": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DG3YearRelativeToToday": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "relative": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year relative": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DG3 year relative": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dg3 yr relative to today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "dg3 yr relative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "yr relative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "dg3 year relation to today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "dg3 year relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "comparative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "year relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
 			          }
 			        }
 			      ]
@@ -16219,6 +16362,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_volumes_have_volume_mmboe"
+			        }
+			      ]
+			    },
+			    "fact_volume_has_entity__MeasureTable_volume_mmboe_current_year": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_volumes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_volume": {
+			          "Target": {
+			            "Entity": "fact_volume"
+			          }
+			        },
+			        "entity__MeasureTable.volume_mmboe_current_year": {
+			          "Target": {
+			            "Entity": "entity__MeasureTable.volume_mmboe_current_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_volume"
+			            },
+			            "Object": {
+			              "Role": "entity__MeasureTable.volume_mmboe_current_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_volumes_have_volume_mmboe_current_year"
+			        }
+			      ]
+			    },
+			    "dim_project_has_DG3_year_relative_to_today": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_projects"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_project": {
+			          "Target": {
+			            "Entity": "dim_project"
+			          }
+			        },
+			        "dim_project.DG3_year_relative_to_today": {
+			          "Target": {
+			            "Entity": "dim_project.DG3_year_relative_to_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_project"
+			            },
+			            "Object": {
+			              "Role": "dim_project.DG3_year_relative_to_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_projects_have_DG3_year_relative_to_today"
 			        }
 			      ]
 			    },
