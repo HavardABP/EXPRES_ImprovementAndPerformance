@@ -12,12 +12,13 @@ table _MeasureTable
 					[volume (mmboe)],
 					FILTER(
 						ALL('dim_projects'),
-						'dim_projects'[DG3Year] >= minYear,
-						OR(
-							'dim_projects'[DG3Year] < currentYear,
-							AND('dim_projects'[DG3Year] = currentYear, 'dim_projects'[asset] <= currentAsset)
+						AND(
+							'dim_projects'[DG3Year] >= minYear,
+							OR(
+								'dim_projects'[DG3Year] < currentYear,
+								AND('dim_projects'[DG3Year] = currentYear, 'dim_projects'[asset] <= currentAsset)
+							)
 						)
-			            
 					)
 				)
 			```
