@@ -77,11 +77,28 @@
                 }
               },
               "queryRef": "Sum(fact_volumes.amount)",
-              "nativeQueryRef": "Volume (mmboe)",
-              "displayName": "Volume (mmboe)"
+              "nativeQueryRef": "Volume (BOE)",
+              "displayName": "Volume (BOE)"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dim_projects"
+                  }
+                },
+                "Property": "project_name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -110,7 +127,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "146.2805509510987D"
+                  "Value": "112.59302330661716D"
                 }
               }
             }

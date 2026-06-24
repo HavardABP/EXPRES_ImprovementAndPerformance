@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "fb9821fb300569638d68",
-  "displayName": "Visual Reference",
-  "displayOption": "ActualSize",
+  "name": "6e8aee4300080952852c",
+  "displayName": "Duplicate of DG3 Volumes",
+  "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
   "objects": {
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Data_Analytics_Background6055447611291123.png"
+                    "ItemName": "Data_Analytics_Background473562921435268.png"
                   }
                 }
               },
@@ -35,10 +35,16 @@
                 }
               }
             }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
           }
         }
       }
     ]
-  },
-  "visibility": "HiddenInViewMode"
+  }
 }

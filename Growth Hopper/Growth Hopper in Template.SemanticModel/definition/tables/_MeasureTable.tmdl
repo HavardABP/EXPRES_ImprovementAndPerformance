@@ -1,38 +1,43 @@
 table _MeasureTable
 	lineageTag: 47894e6e-3462-488b-abb7-4cf20d487757
 
-	measure _cumulativeP50_new =
+	measure _cumulativeP50_new = ```
 			// Running total sorted by DG3Year (ascending) then asset (ascending)
+			// Only counts from the filtered year onwards (respects filters)
+			var minYear = MIN(ALLSELECTED('dim_projects'[DG3Year]))
 			var currentYear = MAX('dim_projects'[DG3Year])
 			var currentAsset = MAX('dim_projects'[asset])
 			return
 				CALCULATE(
-					SUM(fact_volumes[amount]),
+					[volume (mmboe)],
 					FILTER(
 						ALL('dim_projects'),
+						'dim_projects'[DG3Year] >= minYear,
 						OR(
 							'dim_projects'[DG3Year] < currentYear,
 							AND('dim_projects'[DG3Year] = currentYear, 'dim_projects'[asset] <= currentAsset)
 						)
+			            
 					)
 				)
+			```
 		lineageTag: 5027a3bf-187b-475f-96fd-046c7512ffeb
 
-	column 1
-		dataType: string
-		lineageTag: 1d74e995-9215-4bb7-a55e-181bae5a1be4
-		summarizeBy: none
-		sourceColumn: 1
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-		annotation SummarizationSetBy = Automatic
+	measure 'volume (mmboe)' = CALCULATE(SUM(fact_volumes[amount])/1000000)
+		lineageTag: b21343d7-93e9-42c9-8881-a5113d89c22f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition _MeasureTable = m
 		mode: import
 		source =
 				let
-				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WSlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"1" = _t])
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WSlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"1" = _t]),
+				    #"Removed Columns" = Table.RemoveColumns(Source,{"1"})
 				in
-				  Source
+				  #"Removed Columns"
 
 	annotation PBI_NavigationStepName = Navigation
 

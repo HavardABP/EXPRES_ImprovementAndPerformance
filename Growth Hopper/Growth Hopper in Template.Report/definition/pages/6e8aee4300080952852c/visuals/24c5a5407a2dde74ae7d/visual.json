@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "19f3e56c10201db0b20a",
+  "name": "24c5a5407a2dde74ae7d",
   "position": {
-    "x": 521,
+    "x": 1095,
     "y": 210,
-    "z": 13000,
+    "z": 15000,
     "height": 60,
-    "width": 189,
-    "tabOrder": 10000
+    "width": 188.75,
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_projects"
+                      "Entity": "fact_volumes"
                     }
                   },
-                  "Property": "npd_resource_classification"
+                  "Property": "product"
                 }
               },
-              "queryRef": "dim_projects.npd_resource_classification",
-              "nativeQueryRef": "Resource Classification",
-              "active": true,
-              "displayName": "Resource Classification"
+              "queryRef": "fact_volumes.product",
+              "nativeQueryRef": "product",
+              "active": true
             }
           ]
         }
@@ -118,7 +117,56 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "fact_volumes",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "product"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'oil'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'gas'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
         }
       ]
     },
@@ -191,23 +239,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a6a631c90cc1a30067de",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_projects"
-              }
-            },
-            "Property": "npd_resource_classification"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

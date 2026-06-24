@@ -1,132 +1,55 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "d7dc0503409c1ab4e100",
+  "name": "13663f973a3151e16048",
   "position": {
-    "x": 1554.8332824707031,
-    "y": 215,
-    "z": 2000,
+    "x": 104,
+    "y": 210,
+    "z": 5000,
     "height": 60,
-    "width": 130,
-    "tabOrder": 6000
+    "width": 212,
+    "tabOrder": 9000
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Column": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Example data"
-                        }
-                      },
-                      "Property": "Price"
+                    "SourceRef": {
+                      "Entity": "dim_projects"
                     }
                   },
-                  "Function": 4
+                  "Property": "asset"
                 }
               },
-              "queryRef": "Sum(Sheet1.Price)"
+              "queryRef": "dim_projects.asset",
+              "nativeQueryRef": "Asset",
+              "active": true,
+              "displayName": "Asset"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Example data"
-                      }
-                    },
-                    "Property": "Price"
-                  }
-                },
-                "Function": 4
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
-      "categoryLabels": [
+      "data": [
         {
           "properties": {
-            "fontSize": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'9'"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#565656'"
-                    }
-                  }
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "'Dropdown'"
                 }
               }
             }
           }
         }
       ],
-      "labels": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "14D"
-                }
-              }
-            },
-            "preserveWhitespace": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
+      "header": [
         {
           "properties": {
             "show": {
@@ -136,24 +59,10 @@
                 }
               }
             },
-            "text": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Max price'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
+                  "Value": "10D"
                 }
               }
             },
@@ -165,6 +74,76 @@
                       "Value": "'#2F2F2F'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#444444'"
+                    }
+                  }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Colour filter'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'10'"
                 }
               }
             }
@@ -184,7 +163,7 @@
           }
         }
       ],
-      "background": [
+      "border": [
         {
           "properties": {
             "show": {
@@ -197,7 +176,7 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {

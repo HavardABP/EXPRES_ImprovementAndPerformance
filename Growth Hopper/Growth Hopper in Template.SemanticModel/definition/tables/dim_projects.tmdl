@@ -537,9 +537,12 @@ table dim_projects
 		annotation SummarizationSetBy = Automatic
 
 	column DG3Year = year(dim_projects[dg3_date])
+		dataType: int64
 		formatString: 0
 		lineageTag: ade77a83-d870-4064-be1c-c83e19d91155
 		summarizeBy: sum
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
@@ -560,6 +563,16 @@ table dim_projects
 
 		annotation SummarizationSetBy = Automatic
 
+	column DG3YearRelativeToToday =
+			
+			//used as filter for dg3 volume forecast graph
+			if(Year(TODAY()) <= dim_projects[DG3Year], 1, 0)
+		formatString: 0
+		lineageTag: 8c2c5185-e5e3-4367-8ecb-491dca5d2f1a
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dim_projects = m
 		mode: import
 		source = ```
@@ -570,10 +583,9 @@ table dim_projects
 				    #"Added #ofTechnoliges" = Table.AddColumn(dbt_gold_business_plan_reporting_dim_ibm_current_plan_version_project_information, "#OfTechnologies", each List.Count(List.Select({[reservoir_evaluation_and_data_acquisition], [drilling_technology], [chemicals], [completion], [water_shutoff], [non_subsurface_tech]}, each _ = "Yes"))),
 				    #"Added Custom" = Table.AddColumn(#"Added #ofTechnoliges", "AllTechReqs", each Text.Combine(List.Select({if [reservoir_evaluation_and_data_acquisition] = "Yes" then "res_eval" else null, if [drilling_technology] = "Yes" then "drilling_technology" else null, if [chemicals] = "Yes" then "chemicals" else null, if [completion] = "Yes" then "completion" else null, if [water_shutoff] = "Yes" then "water_shutoff" else null, if [non_subsurface_tech] = "Yes" then "non_subsurface_tech" else null}, each _ <> null), ", ")),
 				    #"change date types" = Table.TransformColumnTypes(#"Added Custom", {{"cop_date", type date}, {"dg0_date", type date}, {"dg1_date", type date}, {"dg2_date", type date}, {"dg3_date", type date}, {"dg4_date", type date}, {"first_oil", type date}}, "nb-NO"),
-				    // filter out rc 0-3 as we are only interested in 4-8
-				    #"Fitlered RC" = Table.SelectRows(#"change date types", each ([npd_resource_classification] <> null and [npd_resource_classification] <> "RC 0+1" and [npd_resource_classification] <> "RC 2A" and [npd_resource_classification] <> "RC 2F" and [npd_resource_classification] <> "RC 3F"))
+				    #"Filtered Rows" = Table.SelectRows(#"change date types", each ([npd_resource_classification] <> null and [npd_resource_classification] <> "RC 0+1" and [npd_resource_classification] <> "RC 2A" and [npd_resource_classification] <> "RC 2F" and [npd_resource_classification] <> "RC 3F"))
 				in
-				    #"Fitlered RC"
+				    #"Filtered Rows"
 				```
 
 	annotation PBI_NavigationStepName = Navigation

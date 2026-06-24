@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "b012b87199d8b0dc952e",
+  "name": "d2c44d9a70b834c80ae0",
   "position": {
     "x": 86.309680042882761,
     "y": 299.81257278054011,
@@ -51,18 +51,23 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "_MeasureTable"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_volumes"
+                        }
+                      },
+                      "Property": "amount"
                     }
                   },
-                  "Property": "volume (mmboe)"
+                  "Function": 0
                 }
               },
-              "queryRef": "_MeasureTable.volume (mmboe)",
-              "nativeQueryRef": "Volume (boe)",
-              "displayName": "Volume (boe)"
+              "queryRef": "Sum(fact_volumes.amount)",
+              "nativeQueryRef": "Volume",
+              "displayName": "Volume"
             }
           ]
         },
@@ -3013,7 +3018,6 @@
     "filters": [
       {
         "name": "5c2ceab19632ee8d380a",
-        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
@@ -3068,6 +3072,7 @@
             }
           ]
         },
+        "howCreated": "User",
         "objects": {
           "general": [
             {
@@ -3085,23 +3090,7 @@
         }
       },
       {
-        "name": "1896e14c683d30ea5b6e",
-        "ordinal": 1,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_MeasureTable"
-              }
-            },
-            "Property": "_cumulativeP50_new"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "489d9c7591d18cd350ba",
-        "ordinal": 2,
         "field": {
           "Column": {
             "Expression": {
@@ -3151,23 +3140,7 @@
             }
           ]
         }
-      },
-      {
-        "name": "775feb3d9a67791ae843",
-        "ordinal": 3,
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_MeasureTable"
-              }
-            },
-            "Property": "volume (mmboe)"
-          }
-        },
-        "type": "Advanced"
       }
-    ],
-    "filterSortOrder": "Custom"
+    ]
   }
 }

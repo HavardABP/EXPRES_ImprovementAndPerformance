@@ -191,5 +191,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1598c87e534a3118d09a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_projects"
+              }
+            },
+            "Property": "npd_resource_classification"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

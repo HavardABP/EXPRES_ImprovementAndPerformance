@@ -47,6 +47,7 @@
       }
     ]
   },
+  "visibility": "HiddenInViewMode",
   "visualInteractions": [
     {
       "source": "429ec6c2ef996b3c3e95",

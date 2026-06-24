@@ -54,21 +54,16 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_volumes"
-                        }
-                      },
-                      "Property": "amount"
+                    "SourceRef": {
+                      "Entity": "_MeasureTable"
                     }
                   },
-                  "Function": 0
+                  "Property": "volume (mmboe)"
                 }
               },
-              "queryRef": "Sum(fact_volumes.amount)",
+              "queryRef": "_MeasureTable.volume (mmboe)",
               "nativeQueryRef": "Volume",
               "displayName": "Volume"
             }
@@ -79,18 +74,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "fact_volumes"
-                      }
-                    },
-                    "Property": "amount"
+                  "SourceRef": {
+                    "Entity": "_MeasureTable"
                   }
                 },
-                "Function": 0
+                "Property": "volume (mmboe)"
               }
             },
             "direction": "Descending"
@@ -268,6 +258,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -2785,7 +2782,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -2997,5 +2994,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a34a47a6b845a92ac0e9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_dates"
+              }
+            },
+            "Property": "year"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "49dcd5c53d58b7408aaa",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_projects"
+              }
+            },
+            "Property": "asset"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d59674561c3c97e1ac03",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_MeasureTable"
+              }
+            },
+            "Property": "volume (mmboe)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

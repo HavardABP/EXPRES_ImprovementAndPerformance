@@ -1,133 +1,55 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "c31c96cd2cde8d3ce5aa",
+  "name": "259342f04cc753a07130",
   "position": {
-    "x": 1695.6025132399336,
-    "y": 215,
-    "z": 4000,
+    "x": 521,
+    "y": 210,
+    "z": 13000,
     "height": 60,
-    "width": 130,
-    "tabOrder": 8000
+    "width": 189,
+    "tabOrder": 12000
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Column": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Example data"
-                        }
-                      },
-                      "Property": "Price"
+                    "SourceRef": {
+                      "Entity": "dim_projects"
                     }
                   },
-                  "Function": 3
+                  "Property": "npd_resource_classification"
                 }
               },
-              "queryRef": "Sum(Sheet1.Price)",
-              "nativeQueryRef": "Min of Price"
+              "queryRef": "dim_projects.npd_resource_classification",
+              "nativeQueryRef": "Resource Classification",
+              "active": true,
+              "displayName": "Resource Classification"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Example data"
-                      }
-                    },
-                    "Property": "Price"
-                  }
-                },
-                "Function": 3
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
-      "categoryLabels": [
+      "data": [
         {
           "properties": {
-            "fontSize": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'9'"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#565656'"
-                    }
-                  }
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "'Dropdown'"
                 }
               }
             }
           }
         }
       ],
-      "labels": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "14D"
-                }
-              }
-            },
-            "preserveWhitespace": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
+      "header": [
         {
           "properties": {
             "show": {
@@ -137,24 +59,10 @@
                 }
               }
             },
-            "text": {
+            "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Min price'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
+                  "Value": "10D"
                 }
               }
             },
@@ -166,6 +74,76 @@
                       "Value": "'#2F2F2F'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#444444'"
+                    }
+                  }
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Country filter'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'10'"
                 }
               }
             }
@@ -185,7 +163,7 @@
           }
         }
       ],
-      "background": [
+      "border": [
         {
           "properties": {
             "show": {
@@ -198,7 +176,7 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {

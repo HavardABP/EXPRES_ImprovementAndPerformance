@@ -11676,22 +11676,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__MeasureTable.entity_1": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_MeasureTable",
-			          "ConceptualProperty": "1"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "1": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "entity__MeasureTable.cumulative_P50_new": {
 			      "Definition": {
 			        "Binding": {
@@ -12078,9 +12062,74 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "entity__MeasureTable.volume_mmboe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_MeasureTable",
+			          "ConceptualProperty": "volume (mmboe)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "volume (mmboe)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "volume": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Volume (boe)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "dim_asset_has_index": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_assets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_asset": {
+			          "Target": {
+			            "Entity": "dim_asset"
+			          }
+			        },
+			        "dim_asset.index": {
+			          "Target": {
+			            "Entity": "dim_asset.index"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_asset"
+			            },
+			            "Object": {
+			              "Role": "dim_asset.index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_assets_have_indices"
+			        }
+			      ]
+			    },
 			    "dim_asset_has_asset": {
 			      "Binding": {
 			        "ConceptualEntity": "dim_assets"
@@ -12144,39 +12193,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_volumes_have_cumulative_P50_new"
-			        }
-			      ]
-			    },
-			    "entity__MeasureTable_has_entity_1": {
-			      "Binding": {
-			        "ConceptualEntity": "_MeasureTable"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__MeasureTable": {
-			          "Target": {
-			            "Entity": "entity__MeasureTable"
-			          }
-			        },
-			        "entity__MeasureTable.entity_1": {
-			          "Target": {
-			            "Entity": "entity__MeasureTable.entity_1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__MeasureTable"
-			            },
-			            "Object": {
-			              "Role": "entity__MeasureTable.entity_1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_MeasureTables_have_1"
 			        }
 			      ]
 			    },
@@ -16173,20 +16189,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "dim_asset_has_index": {
+			    "fact_volume_has_entity__MeasureTable_volume_mmboe": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_assets"
+			        "ConceptualEntity": "fact_volumes"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dim_asset": {
+			        "fact_volume": {
 			          "Target": {
-			            "Entity": "dim_asset"
+			            "Entity": "fact_volume"
 			          }
 			        },
-			        "dim_asset.index": {
+			        "entity__MeasureTable.volume_mmboe": {
 			          "Target": {
-			            "Entity": "dim_asset.index"
+			            "Entity": "entity__MeasureTable.volume_mmboe"
 			          }
 			        }
 			      },
@@ -16194,15 +16210,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_asset"
+			              "Role": "fact_volume"
 			            },
 			            "Object": {
-			              "Role": "dim_asset.index"
+			              "Role": "entity__MeasureTable.volume_mmboe"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_assets_have_indices"
+			          "ID": "fact_volumes_have_volume_mmboe"
 			        }
 			      ]
 			    },

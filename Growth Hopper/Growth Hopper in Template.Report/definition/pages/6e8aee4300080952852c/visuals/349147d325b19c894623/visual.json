@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "19f3e56c10201db0b20a",
+  "name": "349147d325b19c894623",
   "position": {
-    "x": 521,
+    "x": 323,
     "y": 210,
-    "z": 13000,
+    "z": 6000,
     "height": 60,
     "width": 189,
     "tabOrder": 10000
@@ -23,13 +23,13 @@
                       "Entity": "dim_projects"
                     }
                   },
-                  "Property": "npd_resource_classification"
+                  "Property": "isProspect"
                 }
               },
-              "queryRef": "dim_projects.npd_resource_classification",
-              "nativeQueryRef": "Resource Classification",
+              "queryRef": "dim_projects.isProspect",
+              "nativeQueryRef": "Project Type",
               "active": true,
-              "displayName": "Resource Classification"
+              "displayName": "Project Type"
             }
           ]
         }
@@ -191,23 +191,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a6a631c90cc1a30067de",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_projects"
-              }
-            },
-            "Property": "npd_resource_classification"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
