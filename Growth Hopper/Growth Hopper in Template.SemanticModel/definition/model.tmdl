@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Visuals","Images","dim_projects","fact_volumes","latestVersion","_MeasureTable","dim_assets"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Visuals
+ref table Images
+ref table dim_projects
+ref table fact_volumes
+ref table latestVersion
+ref table dim_dates
+ref table _MeasureTable
+ref table dim_assets
+
+ref cultureInfo en-US
+

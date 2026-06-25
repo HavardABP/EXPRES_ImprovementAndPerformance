@@ -1,0 +1,149 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Visual Reference_Scatter Bar Chart Close",
+  "name": "0967e404b7323445213d",
+  "options": {
+    "targetVisualNames": [],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "fb9821fb300569638d68",
+    "sections": {
+      "fb9821fb300569638d68": {
+        "visualContainers": {
+          "3ade440c814c0615d909": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "cab5ceed0b7e6b20ae37": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "dfd27776d260ecd37a30",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Visuals"
+                        }
+                      },
+                      "Property": "Visual Type Group"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6a236fb4b1b64d42c34e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Visuals"
+                        }
+                      },
+                      "Property": "Visual Type Group Explanation"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "46df18570331ec00b3dc",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Visuals"
+                        }
+                      },
+                      "Property": "Visual Type"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "63335c067ddc80087ba0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Visuals"
+                        }
+                      },
+                      "Property": "Viual Type Explanation"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fe9ee5db1678205e6315",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Visuals"
+                        }
+                      },
+                      "Property": "Microsoft Docs"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Visuals"
+                        }
+                      },
+                      "Property": "Visual Type Group Explanation"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

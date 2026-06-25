@@ -1,0 +1,19 @@
+relationship 775a79d6-4d16-93a0-04e1-cf2838b1bfe0
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Visuals.'Visual Type'
+	toColumn: Images.'Visual Type'
+
+relationship AutoDetected_88c2ac73-23ab-43b3-95b1-b1d297ff4663
+	fromColumn: fact_volumes.project_specific_id
+	toColumn: dim_projects.project_specific_id
+
+relationship 3ec65e5a-4a46-c201-6cb6-75559a998541
+	fromColumn: fact_volumes.time
+	toColumn: dim_dates.Date
+
+relationship AutoDetected_00a07a8b-ed34-4649-b4e6-29ce76b0bae3
+	crossFilteringBehavior: bothDirections
+	fromColumn: dim_projects.asset
+	toColumn: dim_assets.asset
+

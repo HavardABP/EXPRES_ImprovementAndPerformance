@@ -1,0 +1,66 @@
+table Images
+	isHidden
+	lineageTag: 5e8f7536-3adf-45e7-9c1a-fb1625a2cca7
+
+	measure 'Filtered Image' = ```
+			
+			IF(
+			    ISFILTERED( Visuals[Visual Type] ) ,
+			        SELECTEDVALUE( Images[ImageURL] ) ,
+			            BLANK() 
+			)
+			```
+		isHidden
+		lineageTag: 3b4c5c45-ed29-4f07-b48a-f5c1f9d84415
+		dataCategory: ImageUrl
+
+		changedProperty = IsHidden
+
+	column ImageURL
+		dataType: string
+		isHidden
+		lineageTag: 0f13f2e1-00c1-4217-bb8f-e316872ad0d4
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: ImageURL
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Visual Type'
+		dataType: string
+		isHidden
+		lineageTag: 72b5cc8a-9e88-4885-ba5d-1cf26622ab0d
+		summarizeBy: none
+		sourceColumn: Visual Type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Images = m
+		mode: import
+		source =
+				let
+				    Source = SharePoint.Files("https://akerbp.sharepoint.com/sites/abp-team-1255", [ApiVersion = 15]),
+				    #"Filtered Rows" = Table.SelectRows(Source, each ([Extension] = ".PNG" or [Extension] = ".png") and ([Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/01 Metodikk & verktøy/07 Templates/Background/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/01 Metodikk & verktøy/07 Templates/Background/Supporting Backgrounds/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/01 Metodikk & verktøy/07 Templates/Images/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/01 Logistics/03 PowerBI fil/Marine og Base/Plan&Prepare/Arkiv/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/01 Logistics/03 PowerBI fil/Marine og Base/Plan&Prepare/Arkiv/Plan&Prepare 2.0 - Copy.Report/StaticResources/RegisteredResources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/02 HSSEQ og Lean/handover/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/02 HSSEQ og Lean/Power BI dokumentasjon/WEHRA/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/03 Integrert Planlegging/02 - Power BI/_pre_rebuild/Artefakter/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/03 Integrert Planlegging/Fabric/TAR 2025/Bilder/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/03 Integrert Planlegging/New Plan Stability/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/Asset Engineering (c_ent_enginerring_prod)/Annet/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/Operations League/01 PROD (replaced with 07 Fabric)/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/Operations League/04 ARCHIVE/Report/StaticResources/RegisteredResources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/Operations League/04 ARCHIVE/yippi/OperationsLeague/Report/StaticResources/RegisteredResources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/Operations League/06 POKAL/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/Operations League/07 FABRIC/Prod/OperationsLeague.Report/StaticResources/RegisteredResources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/P&R/Resources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/PIMS Risk Vulnerability/MK Test/MK Export/Optimized_PIMS_RISK.Report/StaticResources/RegisteredResources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/PIMS Risk Vulnerability/MK Test/Project/PIMS_RISK.Report/StaticResources/RegisteredResources/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/04 Operations/TurbineEfficiency/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/Alvheim/AlvheimAOM/Cost/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/Alvheim/AlvheimAOM/HSSE/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/Alvheim/AlvheimAOM/Maintenance/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/Alvheim/AlvheimAOM/Marine/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/Alvheim/AlvheimAOM/Modifications/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/Alvheim AOM Dashboard/Old/6 DEV/Images/Alvheim/AlvheimAOM/Production/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/05 Maintenance & Integrity/03 Vedlikehold- og integritetstavle/04 Arkiv/SMART TAR Arkiv/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/09 Remote First/Bakgrunnsbilder/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/17 PBI Template/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/18 Landing Page/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/18 Landing Page/Ikoner/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/18 Landing Page/Ikoner/Subsea/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/18 Landing Page/SNERT/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/19 Subsea/02. Power BI/Erosion Files/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/19 Subsea/03. Other/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/20 LCI Analytics/07 Templates/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/24 Weather/Weather Forecast/Pictures/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/27. Tabletennis/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/02 Dashbord/31. Offshore Olympian/" or [Folder Path] = "https://akerbp.sharepoint.com/sites/abp-team-1255/Shared Documents/2.6 - Data Analytics/Analytics/03 Analyser & Deep Dives/09 Remote First Analyse/") and ([Name] = "percent Stacked area chart.png" or [Name] = "percent Stacked column chart.png" or [Name] = "ArcGIS for power bi.png" or [Name] = "Area chart.png" or [Name] = "Azure maps.png" or [Name] = "Button slicer.png" or [Name] = "Card.png" or [Name] = "Clustered bar chart.png" or [Name] = "Clustered column chart.png" or [Name] = "Decomposition tree.png" or [Name] = "Donut chart.png" or [Name] = "Filled map.png" or [Name] = "Funnel.png" or [Name] = "Gauge.png" or [Name] = "Key influencers.png" or [Name] = "Input slicer.png" or [Name] = "Line and clustered column chart.png" or [Name] = "Line and stacked column chart.png" or [Name] = "Line chart.png" or [Name] = "Map.png" or [Name] = "Matrix.png" or [Name] = "Paginated report.png" or [Name] = "Pie chart.png" or [Name] = "Python visual.png" or [Name] = "R script visual.png" or [Name] = "Ribbon chart.png" or [Name] = "Scatter chart.png" or [Name] = "Slicer.png" or [Name] = "Stacked area chart.png" or [Name] = "Stacked bar chart.png" or [Name] = "Stacked column chart.png" or [Name] = "Table.png" or [Name] = "Treemap.png")),
+				    #"Added Custom" = Table.AddColumn(#"Filtered Rows", "BinaryToText", each Binary.ToText([Content], BinaryEncoding.Base64)),
+				    #"Added Custom1" = Table.AddColumn(#"Added Custom", "ImageURL", each "data:image/png;base64, " & [BinaryToText]),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Added Custom1",{"Name", "ImageURL"}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Removed Other Columns","100 Stacked column chart","100% Stacked column chart",Replacer.ReplaceText,{"ImageURL"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","100 Stacked bar chart","100% Stacked bar chart",Replacer.ReplaceText,{"ImageURL"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","percent Stacked area chart.png","100% Stacked area chart.png",Replacer.ReplaceText,{"Name"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","percent Stacked column chart","100% Stacked column chart",Replacer.ReplaceText,{"Name"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(#"Replaced Value3", "Name", Splitter.SplitTextByDelimiter(".", QuoteStyle.Csv), {"Visual Type", "Name.2"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"Visual Type", type text}, {"Name.2", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Name.2"})
+				in
+				    #"Removed Columns"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

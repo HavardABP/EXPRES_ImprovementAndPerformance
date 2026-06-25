@@ -1,0 +1,208 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "cab5ceed0b7e6b20ae37",
+  "position": {
+    "x": 85,
+    "y": 220,
+    "z": 1000,
+    "height": 820,
+    "width": 1750,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Images"
+                    }
+                  },
+                  "Property": "ImageURL"
+                }
+              },
+              "queryRef": "Images.ImageURL",
+              "nativeQueryRef": "ImageURL"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuals"
+                    }
+                  },
+                  "Property": "Visual Type"
+                }
+              },
+              "queryRef": "Visuals.Visual Type",
+              "nativeQueryRef": "Visual Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuals"
+                    }
+                  },
+                  "Property": "Viual Type Explanation"
+                }
+              },
+              "queryRef": "Visuals.Viual Type Explanation",
+              "nativeQueryRef": "Viual Type Explanation"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuals"
+                    }
+                  },
+                  "Property": "Visual Type Group"
+                }
+              },
+              "queryRef": "Visuals.Visual Type Group",
+              "nativeQueryRef": "Visual Type Group"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuals"
+                    }
+                  },
+                  "Property": "Visual Type Group Explanation"
+                }
+              },
+              "queryRef": "Visuals.Visual Type Group Explanation",
+              "nativeQueryRef": "Visual Type Group Explanation"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuals"
+                    }
+                  },
+                  "Property": "Microsoft Docs"
+                }
+              },
+              "queryRef": "Visuals.Microsoft Docs",
+              "nativeQueryRef": "Microsoft Docs"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Visuals"
+                  }
+                },
+                "Property": "Visual Type"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "452.57143223500356D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Visuals.Visual Type Group Explanation"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "515.5714430813857D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Visuals.Viual Type Explanation"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "233D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Visuals.Microsoft Docs"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "184.28571428571428D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Visuals.Visual Type"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "backColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

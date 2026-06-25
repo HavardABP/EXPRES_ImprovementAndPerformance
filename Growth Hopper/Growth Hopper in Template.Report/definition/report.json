@@ -1,0 +1,125 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU04",
+      "reportVersionAtImport": {
+        "visual": "2.8.0",
+        "report": "3.2.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "AkerBP_PBI_theme_DA_V17948138645085348.json",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU04",
+          "path": "BaseThemes/CY26SU04.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "AkerBP_PBI_theme_DA_V17948138645085348.json",
+          "path": "AkerBP_PBI_theme_DA_V17948138645085348.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Data_Analytics_Background43090863041988037.png",
+          "path": "Data_Analytics_Background43090863041988037.png",
+          "type": "Image"
+        },
+        {
+          "name": "Data_Analytics_Background473562921435268.png",
+          "path": "Data_Analytics_Background473562921435268.png",
+          "type": "Image"
+        },
+        {
+          "name": "Data_Analytics_Background6055447611291123.png",
+          "path": "Data_Analytics_Background6055447611291123.png",
+          "type": "Image"
+        },
+        {
+          "name": "Data_Analytics_Background669328633053403.png",
+          "path": "Data_Analytics_Background669328633053403.png",
+          "type": "Image"
+        },
+        {
+          "name": "Data_Analytics_Background6823218178054682.png",
+          "path": "Data_Analytics_Background6823218178054682.png",
+          "type": "Image"
+        },
+        {
+          "name": "Data_Analytics_Background8393877644280233.png",
+          "path": "Data_Analytics_Background8393877644280233.png",
+          "type": "Image"
+        },
+        {
+          "name": "Data_Analytics_Background9395174710292435.png",
+          "path": "Data_Analytics_Background9395174710292435.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}
