@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "cb359a007a5b5e1e57a5",
+  "displayName": "Example Page",
+  "displayOption": "ActualSize",
+  "height": 1080,
+  "width": 1920,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Data Analytics Background.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Data_Analytics_Background473562921435268.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "visualInteractions": [
+    {
+      "source": "2ebc6c363b42f3f7a1a7",
+      "target": "8f53867c130fe73ea88f",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8f53867c130fe73ea88f",
+      "target": "2ebc6c363b42f3f7a1a7",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8f53867c130fe73ea88f",
+      "target": "b2002db11bd89b043dce",
+      "type": "DataFilter"
+    },
+    {
+      "source": "af7d2aa501330a103c0a",
+      "target": "8f53867c130fe73ea88f",
+      "type": "HighlightFilter"
+    },
+    {
+      "source": "af7d2aa501330a103c0a",
+      "target": "2ebc6c363b42f3f7a1a7",
+      "type": "HighlightFilter"
+    },
+    {
+      "source": "c99bdc2a586002557500",
+      "target": "b2002db11bd89b043dce",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c99bdc2a586002557500",
+      "target": "2ebc6c363b42f3f7a1a7",
+      "type": "NoFilter"
+    }
+  ]
+}

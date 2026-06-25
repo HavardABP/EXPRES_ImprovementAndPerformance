@@ -1,0 +1,208 @@
+table fact_volumes
+	lineageTag: cf149071-804e-4a81-bc60-924649cfb1d9
+
+	column project_id
+		dataType: string
+		lineageTag: e3556516-65d9-435a-9784-83daf5d7eed6
+		summarizeBy: none
+		sourceColumn: project_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget_pack_id
+		dataType: string
+		lineageTag: 85a64024-a157-49bf-a66b-d05698224807
+		summarizeBy: none
+		sourceColumn: budget_pack_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column joa_id
+		dataType: string
+		lineageTag: 15a9ab0a-db4b-420b-b57f-63f249569ab9
+		summarizeBy: none
+		sourceColumn: joa_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product
+		dataType: string
+		lineageTag: ed19c38c-0865-4f9d-a12f-df0d6e8d5b3f
+		summarizeBy: none
+		sourceColumn: product
+
+		annotation SummarizationSetBy = Automatic
+
+	column currency
+		dataType: string
+		lineageTag: a3254b2f-0ffc-4c09-bc43-a27110d092bb
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column time
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b424a1ea-0954-43fb-9d29-e7632904af09
+		summarizeBy: none
+		sourceColumn: time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column export_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d0f76899-7658-48bd-a384-1d3940c1ecd3
+		summarizeBy: none
+		sourceColumn: export_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_specific_id
+		dataType: string
+		lineageTag: 54dce465-92be-43a6-b0ef-9f62481e8aa2
+		summarizeBy: none
+		sourceColumn: project_specific_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column measure
+		dataType: string
+		lineageTag: d9ac76ee-b2ed-476b-9548-09163629c7c6
+		summarizeBy: none
+		sourceColumn: measure
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_version
+		dataType: string
+		lineageTag: db49c967-d2c7-4878-af5c-b983ce9181df
+		summarizeBy: none
+		sourceColumn: cost_version
+
+		annotation SummarizationSetBy = Automatic
+
+	column export_name
+		dataType: string
+		lineageTag: 2cfd148c-7d9f-46c9-9a45-9d6eecd62850
+		summarizeBy: none
+		sourceColumn: export_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column gross_net
+		dataType: string
+		lineageTag: eebfb7fa-260f-411c-868a-71df5612a039
+		summarizeBy: none
+		sourceColumn: gross_net
+
+		annotation SummarizationSetBy = Automatic
+
+	column real_nominal
+		dataType: string
+		lineageTag: a1a03828-48e7-44eb-88b7-26d24a84775c
+		summarizeBy: none
+		sourceColumn: real_nominal
+
+		annotation SummarizationSetBy = Automatic
+
+	column amount
+		dataType: double
+		lineageTag: 25d6c242-c1b9-44ae-8c9b-d48738b413cc
+		summarizeBy: sum
+		sourceColumn: amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cost_drivers
+		dataType: string
+		lineageTag: b85a35d6-4c9a-4820-83e5-df5ffcc31979
+		summarizeBy: none
+		sourceColumn: cost_drivers
+
+		annotation SummarizationSetBy = Automatic
+
+	column production_scenario
+		dataType: string
+		lineageTag: 9a4692e4-d811-491d-b92d-c4da395d1347
+		summarizeBy: none
+		sourceColumn: production_scenario
+
+		annotation SummarizationSetBy = Automatic
+
+	column layer
+		dataType: string
+		lineageTag: 847977ce-e1b9-49b6-bc56-6ee5ae267fa7
+		summarizeBy: none
+		sourceColumn: layer
+
+		annotation SummarizationSetBy = Automatic
+
+	column counterpart
+		dataType: string
+		lineageTag: 6f21718a-fea4-4d24-8eb8-4f3fd964b4f3
+		summarizeBy: none
+		sourceColumn: counterpart
+
+		annotation SummarizationSetBy = Automatic
+
+	column fabric_last_updated_on
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4978da26-0c7f-40c4-8799-7f42d9403be8
+		summarizeBy: none
+		sourceColumn: fabric_last_updated_on
+
+		annotation SummarizationSetBy = Automatic
+
+	column pk
+		dataType: string
+		lineageTag: 753f8f2f-65d0-4bba-a888-195fbd5c0c27
+		summarizeBy: none
+		sourceColumn: pk
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostVersionYear
+		dataType: string
+		lineageTag: 6e441092-8c95-4ab9-a7b8-acba9c5d9509
+		summarizeBy: none
+		sourceColumn: CostVersionYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CostVersionSuffix
+		dataType: string
+		lineageTag: b23cd343-853a-4c43-b199-2d449ea8d3ce
+		summarizeBy: none
+		sourceColumn: CostVersionSuffix
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_volumes = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("obax4o2iqosevp5oa2r6dbtune-2dhddioar5aebauc4huzjvnrve.datawarehouse.fabric.microsoft.com", "wh_gold_finance"),
+				    dbt_gold_business_plan_reporting_fact_ibm_exp_reporting_combined = Source{[Schema="dbt_gold_business_plan_reporting",Item="fact_ibm_exp_reporting_combined"]}[Data],
+				    #"Filtered on latest version (export)" = Table.SelectRows(dbt_gold_business_plan_reporting_fact_ibm_exp_reporting_combined, each [export_name] = "2026 1H @ 2026Q2"),
+				    // Duplicate and split version into two columns
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Filtered on latest version (export)", "cost_version", "cost_version - Copy"),
+				    #"Split Column by Position" = Table.SplitColumn(#"Duplicated Column", "cost_version - Copy", Splitter.SplitTextByPositions({0, 4}, false), {"cost_version - Copy.1", "cost_version - Copy.2"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Split Column by Position",{{"cost_version - Copy.1", "CostVersionYear"}, {"cost_version - Copy.2", "CostVersionSuffix"}}),
+				    // Filter "Measure" on Blended BOE
+				    #"Filtered Rows1" = Table.SelectRows(#"Renamed Columns", each [measure] = "Blended BOE"),
+				    // merged (right outer) with dim_projects to avoid orphaned projects after dim table was filtered
+				    #"Merged With Dim_Project" = Table.NestedJoin(#"Filtered Rows1", {"project_id"}, dim_projects, {"project_code"}, "dim_projects", JoinKind.RightOuter)
+				in
+				    #"Merged With Dim_Project"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

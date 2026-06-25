@@ -1,0 +1,31 @@
+table latestVersion
+	isHidden
+	lineageTag: 4ed56b7c-6d90-4957-87fc-f4d43ec29aca
+
+	column latestVersion
+		dataType: string
+		isHidden
+		lineageTag: 1af1e9d1-291c-4857-992c-58d41a164605
+		summarizeBy: none
+		sourceColumn: latestVersion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition latestVersion = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("obax4o2iqosevp5oa2r6dbtune-2dhddioar5aebauc4huzjvnrve.datawarehouse.fabric.microsoft.com", "wh_gold_finance"),
+				    dbt_gold_business_plan_reporting_dim_ibm_current_plan_version_project_information = Source{[Schema="dbt_gold_business_plan_reporting",Item="dim_ibm_current_plan_version_project_information"]}[Data],
+				    out = dbt_gold_business_plan_reporting_dim_ibm_current_plan_version_project_information{0}[version]
+				in
+				    out
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Growth Hopper in Template"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "119d95a3-21af-42ce-80cf-8eba2f505e79"
+  }
+}

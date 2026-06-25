@@ -1,0 +1,84 @@
+table _MeasureTable
+	lineageTag: 47894e6e-3462-488b-abb7-4cf20d487757
+
+	measure _cumulativeP50_new =
+			// Running total sorted by DG3Year (ascending) then asset (ascending)
+			// Starts from current year, or later if a higher year is selected
+			var startYear = YEAR(TODAY())
+			var selectedMinYear = MINX(ALLSELECTED('dim_projects'[DG3Year]), 'dim_projects'[DG3Year])
+			var effectiveStartYear = MAX(startYear, COALESCE(selectedMinYear, startYear))
+			var currentYear = MAX('dim_projects'[DG3Year])
+			var currentAsset = MAX('dim_projects'[asset])
+			return
+				CALCULATE(
+					[volume (mmboe)],
+					FILTER(
+						ALL('dim_projects'),
+						AND(
+							'dim_projects'[DG3Year] >= effectiveStartYear,
+							OR(
+								'dim_projects'[DG3Year] < currentYear,
+								AND('dim_projects'[DG3Year] = currentYear, 'dim_projects'[asset] <= currentAsset)
+							)
+						)
+					)
+				)
+		lineageTag: 5027a3bf-187b-475f-96fd-046c7512ffeb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'volume (mmboe)' = CALCULATE(SUM(fact_volumes[amount])/1000000)
+		lineageTag: b21343d7-93e9-42c9-8881-a5113d89c22f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'volume (mmboe) current year+' =
+			var startYear = YEAR(TODAY())
+			return
+				CALCULATE(
+					[volume (mmboe)],
+					KEEPFILTERS('dim_projects'[DG3Year] >= startYear)
+				)
+		lineageTag: 8fbd472d-3d6f-4f94-8f95-ff1e6996e6ea
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _cumulativeVol_Project =
+			// Running total sorted by DG3Year (ascending) then asset (ascending)
+			// Starts from current year, or later if a higher year is selected
+			var startYear = YEAR(TODAY())
+			var selectedMinYear = MINX(ALLSELECTED('dim_projects'[DG3Year]), 'dim_projects'[DG3Year])
+			var effectiveStartYear = MAX(startYear, COALESCE(selectedMinYear, startYear))
+			var currentYear = MAX('dim_projects'[DG3Year])
+			var currentProject = MAX('dim_projects'[project_name])
+			return
+				CALCULATE(
+					[volume (mmboe)],
+					FILTER(
+						ALLSELECTED('dim_projects'),
+						AND(
+							'dim_projects'[DG3Year] >= effectiveStartYear,
+							OR(
+								'dim_projects'[DG3Year] < currentYear,
+								AND('dim_projects'[DG3Year] = currentYear, 'dim_projects'[project_name] <= currentProject)
+							)
+						)
+					)
+				)
+		lineageTag: 62373481-1831-4c8b-9966-ca98fb2a64d6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition _MeasureTable = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WSlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"1" = _t]),
+				    #"Removed Columns" = Table.RemoveColumns(Source,{"1"})
+				in
+				  #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
