@@ -55,7 +55,7 @@ table _MeasureTable
 				CALCULATE(
 					[volume (mmboe)],
 					FILTER(
-						ALL('dim_projects'),
+						ALLSELECTED('dim_projects'),
 						AND(
 							'dim_projects'[DG3Year] >= effectiveStartYear,
 							OR(

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "c0fe0473903c19c19928",
+  "name": "8997641874aaa2a70877",
   "position": {
-    "x": 906.25,
+    "x": 104,
     "y": 210,
-    "z": 16000,
+    "z": 2000,
     "height": 60,
-    "width": 188.75,
-    "tabOrder": 16000
+    "width": 212,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fact_volumes"
+                      "Entity": "dim_projects"
                     }
                   },
-                  "Property": "production_scenario"
+                  "Property": "asset"
                 }
               },
-              "queryRef": "fact_volumes.production_scenario",
-              "nativeQueryRef": "production_scenario",
-              "active": true
+              "queryRef": "dim_projects.asset",
+              "nativeQueryRef": "Asset",
+              "active": true,
+              "displayName": "Asset"
             }
           ]
         }
@@ -117,49 +118,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "f",
-                    "Entity": "fact_volumes",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "f"
-                                }
-                              },
-                              "Property": "production_scenario"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'P50'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },
@@ -177,7 +136,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Country filter'"
+                  "Value": "'Colour filter'"
                 }
               }
             },
@@ -232,5 +191,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "isHidden": true
 }

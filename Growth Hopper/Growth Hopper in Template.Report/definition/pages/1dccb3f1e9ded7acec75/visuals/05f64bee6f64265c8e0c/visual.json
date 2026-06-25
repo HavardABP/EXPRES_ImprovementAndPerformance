@@ -1,43 +1,55 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "247c36779e0e7d1c0192",
+  "name": "05f64bee6f64265c8e0c",
   "position": {
-    "x": 1659,
-    "y": 100,
-    "z": 12000,
-    "height": 50,
-    "width": 50,
-    "tabOrder": 7000
+    "x": 84.285714285714292,
+    "y": 200,
+    "z": 0,
+    "height": 80,
+    "width": 625.71428571428578,
+    "tabOrder": 3000
   },
   "visual": {
-    "visualType": "actionButton",
+    "visualType": "shape",
     "objects": {
-      "icon": [
+      "shape": [
         {
           "properties": {
-            "shapeType": {
+            "tileShape": {
               "expr": {
                 "Literal": {
-                  "Value": "'information'"
+                  "Value": "'rectangle'"
                 }
               }
-            },
-            "lineColor": {
+            }
+          }
+        }
+      ],
+      "rotation": [
+        {
+          "properties": {
+            "shapeAngle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "fillColor": {
               "solid": {
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
+                      "ColorId": 0,
                       "Percent": 0
                     }
                   }
-                }
-              }
-            },
-            "lineWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
                 }
               }
             }
@@ -46,23 +58,8 @@
             "id": "default"
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Info button Open'"
-                }
-              }
-            }
-          }
-        }
       ],
-      "border": [
+      "outline": [
         {
           "properties": {
             "show": {
@@ -74,8 +71,10 @@
             }
           }
         }
-      ],
-      "visualLink": [
+      ]
+    },
+    "visualContainerObjects": {
+      "dropShadow": [
         {
           "properties": {
             "show": {
@@ -85,17 +84,14 @@
                 }
               }
             },
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Bookmark'"
-                }
-              }
-            },
-            "bookmark": {
-              "expr": {
-                "Literal": {
-                  "Value": "'f11838385dd5e47b0de4'"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D9D9D9'"
+                    }
+                  }
                 }
               }
             }
@@ -105,5 +101,6 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

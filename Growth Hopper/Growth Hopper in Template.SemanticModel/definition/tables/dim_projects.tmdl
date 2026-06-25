@@ -184,7 +184,7 @@ table dim_projects
 
 	column dg0_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 234babba-224b-466d-9716-6d2f07ece49c
 		summarizeBy: none
 		sourceColumn: dg0_date
@@ -195,7 +195,7 @@ table dim_projects
 
 	column dg1_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: e177f36c-db6d-4263-858b-017e7e152c03
 		summarizeBy: none
 		sourceColumn: dg1_date
@@ -206,7 +206,7 @@ table dim_projects
 
 	column dg2_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 94ca974f-a890-4fda-bcff-04fc9fad37c8
 		summarizeBy: none
 		sourceColumn: dg2_date
@@ -217,7 +217,7 @@ table dim_projects
 
 	column dg3_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: f3de6d6b-3b12-48be-adb0-e13f44429f3e
 		summarizeBy: none
 		sourceColumn: dg3_date
@@ -228,7 +228,7 @@ table dim_projects
 
 	column dg4_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 7bc5db71-1686-40dd-a04c-0149c2e2f31e
 		summarizeBy: none
 		sourceColumn: dg4_date

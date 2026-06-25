@@ -4,36 +4,10 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 2005.3671432871383,
-        "y": 232.12983695035251
+        "x": 2280.2356279606206,
+        "y": 276.54456347923735
       },
       "nodes": [
-        {
-          "location": {
-            "x": 364,
-            "y": 284
-          },
-          "nodeIndex": "Example data",
-          "nodeLineageTag": "7e174f7c-5414-4570-b4a2-87e1f2595106",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 64,
-            "y": 290
-          },
-          "nodeIndex": "Products",
-          "nodeLineageTag": "32cc45d0-3206-4f79-8d0a-bfbe652ad9bc",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 7
-        },
         {
           "location": {
             "x": 1734.0604399366389,
@@ -45,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 6
         },
         {
           "location": {
@@ -58,20 +32,7 @@
             "height": 272,
             "width": 234
           },
-          "zIndex": 8
-        },
-        {
-          "location": {
-            "x": 316,
-            "y": 0
-          },
-          "nodeIndex": "Assets",
-          "nodeLineageTag": "8309cda9-224e-4040-852d-c1f8024763ef",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 3
+          "zIndex": 5
         },
         {
           "location": {
@@ -84,7 +45,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 11
+          "zIndex": 8
         },
         {
           "location": {
@@ -97,7 +58,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 7
         },
         {
           "location": {
@@ -110,7 +71,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 3
         },
         {
           "location": {
@@ -123,7 +84,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 4
         },
         {
           "location": {

@@ -5,917 +5,6 @@ cultureInfo en-US
 			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "example_data": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "example data": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "data": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "example information": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "example fact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "example info": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "example statistic": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "information": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "fact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "info": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "statistic": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "example document": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "example figure": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.price": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Price"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "price": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "value": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "worth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "fee": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "charge": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "bill": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "rate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "expense": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "cost": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "outlay": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "penalty": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.amount": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Amount"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "amount": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "expanse": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "extent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.color": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Color"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "color": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "hue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "tint": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "shade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "dye": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "paint": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "pigment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.max_of_price_average_per_price": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Max of Price average per Price"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "max of price average per price": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "B": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.price_average_per_location": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Price average per Location"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "price average per location": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "price average": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "price average per locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "price average per placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "price average per scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "price average per venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "price average per address": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "price average per place": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "price average per position": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "price average per setting": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "price average per site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "price average per spot": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.599
-			          }
-			        },
-			        {
-			          "Quantity": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.price_average_per_country_running_total_in_location": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Price average per Country running total in Location"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "price average per country running total in location": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.min_of_price_weighted_by_count_of_color_per_asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Min of Price weighted by Count of Color per Asset"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "min of price weighted by count of color per asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "A": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "B": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.price_total_for_asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Price total for Asset"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "price total for asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "price total": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "price aggregate for asset": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "price overall for asset": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.748
-			          }
-			        },
-			        {
-			          "price aggregate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "price overall": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.price_average_per_asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Price average per Asset"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "price average per asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "price average": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "price mode per asset": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.489
-			          }
-			        },
-			        {
-			          "price norm per asset": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.489
-			          }
-			        },
-			        {
-			          "price mode": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "price norm": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "price mean per asset": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.474
-			          }
-			        },
-			        {
-			          "price median per asset": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.474
-			          }
-			        },
-			        {
-			          "price mean": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.461
-			          }
-			        },
-			        {
-			          "price median": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.461
-			          }
-			        }
-			      ]
-			    },
-			    "product": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Products"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "product": {
-			            "State": "Generated",
-			            "Weight": 0.87
-			          }
-			        },
-			        {
-			          "artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
-			    "product.product": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Products",
-			          "ConceptualProperty": "Product"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "product": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "artifact": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "item": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "merchandise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "produce": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
-			    "product.quantity": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Products",
-			          "ConceptualProperty": "Quantity"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "quantity": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "extent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "magnitude": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "size": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "capacity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "mass": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
 			    "visual": {
 			      "Definition": {
 			        "Binding": {
@@ -2038,1067 +1127,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Asset"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "strength": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "skill": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "talent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "ability": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "qualification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "endowment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "advantage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "benefit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "plus": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "quality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.location": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Location"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "location": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "address": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "place": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "position": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "setting": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "spot": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
-			    "example_data.level": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Example data",
-			          "ConceptualProperty": "Level"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "level": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "threshold": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "point": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "tier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
-			    "product.asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Products",
-			          "ConceptualProperty": "Asset"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "strength": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "skill": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "talent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "ability": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "qualification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "endowment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "advantage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "benefit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "plus": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "quality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Assets"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "strength": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "skill": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "talent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "ability": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "qualification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "endowment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "advantage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "benefit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "plus": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "quality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "asset.asset": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Assets",
-			          "ConceptualProperty": "Asset"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "asset": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "asset name": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "strength": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "skill": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "talent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "ability": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "qualification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "endowment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "advantage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "benefit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "plus": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "quality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ],
-			      "NameType": "Name"
-			    },
-			    "asset.location": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Assets",
-			          "ConceptualProperty": "Location"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "location": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "address": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "place": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "position": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "setting": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "spot": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
-			    "product.quantity_multiplied": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Products",
-			          "ConceptualProperty": "Quantity Multiplied"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "quantity multiplied": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "extent multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "magnitude multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "amount multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "number multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "measure multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "size multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "capacity multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "mass multiplied": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "X3": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "product.amount_divided": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Products",
-			          "ConceptualProperty": "Amount Divided"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "amount divided": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "quantity divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "volume divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "expanse divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "extent divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "sum divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "total divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "aggregate divided": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "X2": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Last Year": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "asset.well": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Assets",
-			          "ConceptualProperty": "Well"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "well": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "fine": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "glowing": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "fit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "sound": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "thriving": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "good": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        },
-			        {
-			          "okay": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
 			          }
 			        }
 			      ]
@@ -5595,6 +3623,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "DG 0": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -5670,6 +3708,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "DG 1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -5747,6 +3795,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "DG 2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -5823,6 +3881,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "DG 3": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -5898,6 +3966,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "DG 4": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -7103,6 +5181,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -10750,7 +8838,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "tier": {
+			          "level": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -10760,7 +8848,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "seam": {
+			          "tier": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -11518,6 +9606,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.75
 			          }
+			        },
+			        {
+			          "DG 3 Year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -11698,7 +9796,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Cumulative Volume": {
+			          "Cumulative Volume (mmboe)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12100,13 +10198,17 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Volume": {
-			            "State": "Generated",
-			            "Weight": 0.675
+			          "Volume (mmboe)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
-			          "Volume (boe)": {
+			          "Total Vol (mmboe)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -12237,9 +10339,356 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "entity__MeasureTable.cumulative_vol_project": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_MeasureTable",
+			          "ConceptualProperty": "_cumulativeVol_Project"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cumulative vol project": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_cumulativeVol_Project": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cumulative vol assignment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cumulative vol development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cumulative vol blueprint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative vol design": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative vol estimate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative vol forecast": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative vol initiative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative vol plan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cumulative vol task": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Cumulative Volume mmboe)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "products.amount_divided": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Amount Divided"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "X2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Last Year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "products.quantity_multiplied": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Quantity Multiplied"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "X3": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "example_data.price_average_per_location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Example data",
+			          "ConceptualProperty": "Price average per Location"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Quantity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "example_data.min_of_price_weighted_by_count_of_color_per_asset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Example data",
+			          "ConceptualProperty": "Min of Price weighted by Count of Color per Asset"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "A": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "B": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "example_data.max_of_price_average_per_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Example data",
+			          "ConceptualProperty": "Max of Price average per Price"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "B": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "dim_project_has_DG3_year_relative_to_today": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_projects"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_project": {
+			          "Target": {
+			            "Entity": "dim_project"
+			          }
+			        },
+			        "dim_project.DG3_year_relative_to_today": {
+			          "Target": {
+			            "Entity": "dim_project.DG3_year_relative_to_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_project"
+			            },
+			            "Object": {
+			              "Role": "dim_project.DG3_year_relative_to_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_projects_have_DG3_year_relative_to_today"
+			        }
+			      ]
+			    },
+			    "fact_volume_has_entity__MeasureTable_volume_mmboe_current_year": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_volumes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_volume": {
+			          "Target": {
+			            "Entity": "fact_volume"
+			          }
+			        },
+			        "entity__MeasureTable.volume_mmboe_current_year": {
+			          "Target": {
+			            "Entity": "entity__MeasureTable.volume_mmboe_current_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_volume"
+			            },
+			            "Object": {
+			              "Role": "entity__MeasureTable.volume_mmboe_current_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_volumes_have_volume_mmboe_current_year"
+			        }
+			      ]
+			    },
+			    "fact_volume_has_entity__MeasureTable_volume_mmboe": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_volumes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_volume": {
+			          "Target": {
+			            "Entity": "fact_volume"
+			          }
+			        },
+			        "entity__MeasureTable.volume_mmboe": {
+			          "Target": {
+			            "Entity": "entity__MeasureTable.volume_mmboe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_volume"
+			            },
+			            "Object": {
+			              "Role": "entity__MeasureTable.volume_mmboe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_volumes_have_volume_mmboe"
+			        }
+			      ]
+			    },
 			    "dim_asset_has_index": {
 			      "Binding": {
 			        "ConceptualEntity": "dim_assets"
@@ -15437,640 +13886,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "asset_has_well": {
-			      "Binding": {
-			        "ConceptualEntity": "Assets"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "asset": {
-			          "Target": {
-			            "Entity": "asset"
-			          }
-			        },
-			        "asset.well": {
-			          "Target": {
-			            "Entity": "asset.well"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Object": {
-			              "Role": "asset.well"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_have_wells"
-			        }
-			      ]
-			    },
-			    "example_data_has_product_amount_divided": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "product.amount_divided": {
-			          "Target": {
-			            "Entity": "product.amount_divided"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "product.amount_divided"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_amount_divided"
-			        }
-			      ]
-			    },
-			    "product_has_quantity_multiplied": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product": {
-			          "Target": {
-			            "Entity": "product"
-			          }
-			        },
-			        "product.quantity_multiplied": {
-			          "Target": {
-			            "Entity": "product.quantity_multiplied"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product"
-			            },
-			            "Object": {
-			              "Role": "product.quantity_multiplied"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "products_have_quantity_multiplied"
-			        }
-			      ]
-			    },
-			    "asset_has_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Assets"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "asset": {
-			          "Target": {
-			            "Entity": "asset"
-			          }
-			        },
-			        "asset.location": {
-			          "Target": {
-			            "Entity": "asset.location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Object": {
-			              "Role": "asset.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_have_locations"
-			        }
-			      ]
-			    },
-			    "asset_has_asset": {
-			      "Binding": {
-			        "ConceptualEntity": "Assets"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "asset": {
-			          "Target": {
-			            "Entity": "asset"
-			          }
-			        },
-			        "asset.asset": {
-			          "Target": {
-			            "Entity": "asset.asset"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Object": {
-			              "Role": "asset.asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_have_assets"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Name": {
-			              "Role": "asset.asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_are_names_IDs_of_assets"
-			        }
-			      ]
-			    },
-			    "example_data_has_level": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.level": {
-			          "Target": {
-			            "Entity": "example_data.level"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.level"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_levels"
-			        }
-			      ]
-			    },
-			    "example_data_has_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.location": {
-			          "Target": {
-			            "Entity": "example_data.location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_locations"
-			        }
-			      ]
-			    },
-			    "product_has_quantity": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product": {
-			          "Target": {
-			            "Entity": "product"
-			          }
-			        },
-			        "product.quantity": {
-			          "Target": {
-			            "Entity": "product.quantity"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product"
-			            },
-			            "Object": {
-			              "Role": "product.quantity"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "products_have_quantities"
-			        }
-			      ]
-			    },
-			    "product_has_product": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product": {
-			          "Target": {
-			            "Entity": "product"
-			          }
-			        },
-			        "product.product": {
-			          "Target": {
-			            "Entity": "product.product"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product"
-			            },
-			            "Object": {
-			              "Role": "product.product"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "products_have_products"
-			        }
-			      ]
-			    },
-			    "example_data_has_price_average_per_asset": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.price_average_per_asset": {
-			          "Target": {
-			            "Entity": "example_data.price_average_per_asset"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.price_average_per_asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_price_average_per_asset"
-			        }
-			      ]
-			    },
-			    "example_data_has_price_total_for_asset": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.price_total_for_asset": {
-			          "Target": {
-			            "Entity": "example_data.price_total_for_asset"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.price_total_for_asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_price_total_for_asset"
-			        }
-			      ]
-			    },
-			    "example_data_has_min_of_price_weighted_by_count_of_color_per_asset": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.min_of_price_weighted_by_count_of_color_per_asset": {
-			          "Target": {
-			            "Entity": "example_data.min_of_price_weighted_by_count_of_color_per_asset"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.min_of_price_weighted_by_count_of_color_per_asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_min_of_price_weighted_by_count_of_color_per_asset"
-			        }
-			      ]
-			    },
-			    "example_data_has_price_average_per_country_running_total_in_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.price_average_per_country_running_total_in_location": {
-			          "Target": {
-			            "Entity": "example_data.price_average_per_country_running_total_in_location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.price_average_per_country_running_total_in_location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_price_average_per_country_running_total_in_location"
-			        }
-			      ]
-			    },
-			    "example_data_has_price_average_per_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.price_average_per_location": {
-			          "Target": {
-			            "Entity": "example_data.price_average_per_location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.price_average_per_location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_price_average_per_location"
-			        }
-			      ]
-			    },
-			    "example_data_has_max_of_price_average_per_price": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.max_of_price_average_per_price": {
-			          "Target": {
-			            "Entity": "example_data.max_of_price_average_per_price"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.max_of_price_average_per_price"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_max_of_price_average_per_price"
-			        }
-			      ]
-			    },
-			    "example_data_has_color": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.color": {
-			          "Target": {
-			            "Entity": "example_data.color"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.color"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_colors"
-			        }
-			      ]
-			    },
-			    "example_data_has_amount": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.amount": {
-			          "Target": {
-			            "Entity": "example_data.amount"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.amount"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_amounts"
-			        }
-			      ]
-			    },
-			    "example_data_has_price": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.price": {
-			          "Target": {
-			            "Entity": "example_data.price"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "example_data.price"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_prices"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "example_data.price"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "price_indicates_how_expensive_example_data_are"
-			        }
-			      ]
-			    },
 			    "dim_project_in_area": {
 			      "Binding": {
 			        "ConceptualEntity": "dim_projects"
@@ -16113,96 +13928,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_projects_are_in_areas"
-			        }
-			      ]
-			    },
-			    "asset_in_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Assets"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "asset": {
-			          "Target": {
-			            "Entity": "asset"
-			          }
-			        },
-			        "asset.location": {
-			          "Target": {
-			            "Entity": "asset.location"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "asset.location"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "asset.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_are_in_locations"
-			        }
-			      ]
-			    },
-			    "example_data_in_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "example_data.location": {
-			          "Target": {
-			            "Entity": "example_data.location"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "example_data.location"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "example_data.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_are_in_locations"
 			        }
 			      ]
 			    },
@@ -16332,7 +14057,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_volume_has_entity__MeasureTable_volume_mmboe": {
+			    "fact_volume_has_entity__MeasureTable_cumulative_vol_project": {
 			      "Binding": {
 			        "ConceptualEntity": "fact_volumes"
 			      },
@@ -16343,9 +14068,9 @@ cultureInfo en-US
 			            "Entity": "fact_volume"
 			          }
 			        },
-			        "entity__MeasureTable.volume_mmboe": {
+			        "entity__MeasureTable.cumulative_vol_project": {
 			          "Target": {
-			            "Entity": "entity__MeasureTable.volume_mmboe"
+			            "Entity": "entity__MeasureTable.cumulative_vol_project"
 			          }
 			        }
 			      },
@@ -16356,170 +14081,12 @@ cultureInfo en-US
 			              "Role": "fact_volume"
 			            },
 			            "Object": {
-			              "Role": "entity__MeasureTable.volume_mmboe"
+			              "Role": "entity__MeasureTable.cumulative_vol_project"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fact_volumes_have_volume_mmboe"
-			        }
-			      ]
-			    },
-			    "fact_volume_has_entity__MeasureTable_volume_mmboe_current_year": {
-			      "Binding": {
-			        "ConceptualEntity": "fact_volumes"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_volume": {
-			          "Target": {
-			            "Entity": "fact_volume"
-			          }
-			        },
-			        "entity__MeasureTable.volume_mmboe_current_year": {
-			          "Target": {
-			            "Entity": "entity__MeasureTable.volume_mmboe_current_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_volume"
-			            },
-			            "Object": {
-			              "Role": "entity__MeasureTable.volume_mmboe_current_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fact_volumes_have_volume_mmboe_current_year"
-			        }
-			      ]
-			    },
-			    "dim_project_has_DG3_year_relative_to_today": {
-			      "Binding": {
-			        "ConceptualEntity": "dim_projects"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_project": {
-			          "Target": {
-			            "Entity": "dim_project"
-			          }
-			        },
-			        "dim_project.DG3_year_relative_to_today": {
-			          "Target": {
-			            "Entity": "dim_project.DG3_year_relative_to_today"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_project"
-			            },
-			            "Object": {
-			              "Role": "dim_project.DG3_year_relative_to_today"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_projects_have_DG3_year_relative_to_today"
-			        }
-			      ]
-			    },
-			    "example_data_has_asset": {
-			      "Binding": {
-			        "ConceptualEntity": "Example data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "example_data": {
-			          "Target": {
-			            "Entity": "example_data"
-			          }
-			        },
-			        "asset": {
-			          "Target": {
-			            "Entity": "asset"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "example_data"
-			            },
-			            "Object": {
-			              "Role": "asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "example_data_have_assets"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Object": {
-			              "Role": "example_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_have_example_data"
-			        }
-			      ]
-			    },
-			    "product_has_asset": {
-			      "Binding": {
-			        "ConceptualEntity": "Products"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "product": {
-			          "Target": {
-			            "Entity": "product"
-			          }
-			        },
-			        "asset": {
-			          "Target": {
-			            "Entity": "asset"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "product"
-			            },
-			            "Object": {
-			              "Role": "asset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "products_have_assets"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "asset"
-			            },
-			            "Object": {
-			              "Role": "product"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "assets_have_products"
+			          "ID": "fact_volumes_have_cumulative_vol_project"
 			        }
 			      ]
 			    },

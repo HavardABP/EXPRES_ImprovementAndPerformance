@@ -1,0 +1,127 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "1152503a8f74ba4888b5",
+  "position": {
+    "x": 8.75,
+    "y": 87.5,
+    "z": 13001,
+    "height": 96.25,
+    "width": 383.75,
+    "tabOrder": 12001
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_projects"
+                    }
+                  },
+                  "Property": "dg0_date"
+                }
+              },
+              "queryRef": "dim_projects.dg0_date",
+              "nativeQueryRef": "DG 0",
+              "displayName": "DG 0"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_projects"
+                    }
+                  },
+                  "Property": "dg1_date"
+                }
+              },
+              "queryRef": "dim_projects.dg1_date",
+              "nativeQueryRef": "DG 1",
+              "displayName": "DG 1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_projects"
+                    }
+                  },
+                  "Property": "dg2_date"
+                }
+              },
+              "queryRef": "dim_projects.dg2_date",
+              "nativeQueryRef": "DG 2",
+              "displayName": "DG 2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_projects"
+                    }
+                  },
+                  "Property": "dg3_date"
+                }
+              },
+              "queryRef": "dim_projects.dg3_date",
+              "nativeQueryRef": "DG 3",
+              "displayName": "DG 3"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_projects"
+                    }
+                  },
+                  "Property": "dg4_date"
+                }
+              },
+              "queryRef": "dim_projects.dg4_date",
+              "nativeQueryRef": "DG 4",
+              "displayName": "DG 4"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

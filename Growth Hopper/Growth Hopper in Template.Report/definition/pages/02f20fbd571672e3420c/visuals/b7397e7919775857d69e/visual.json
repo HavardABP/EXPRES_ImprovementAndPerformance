@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "b7397e7919775857d69e",
   "position": {
-    "x": 86,
+    "x": 85.714285714285722,
     "y": 300,
     "z": 5000,
     "height": 760,
-    "width": 1328,
+    "width": 1334.2857142857144,
     "tabOrder": 10000
   },
   "visual": {
@@ -62,8 +62,8 @@
                 }
               },
               "queryRef": "_MeasureTable.volume (mmboe) current year+",
-              "nativeQueryRef": "Volume (boe)",
-              "displayName": "Volume (boe)"
+              "nativeQueryRef": "Volume (mmboe)",
+              "displayName": "Volume (mmboe)"
             }
           ]
         },
@@ -81,7 +81,8 @@
                 }
               },
               "queryRef": "_MeasureTable._cumulativeVol_Project",
-              "nativeQueryRef": "_cumulativeVol_Project"
+              "nativeQueryRef": "Cumulative Volume mmboe)",
+              "displayName": "Cumulative Volume mmboe)"
             }
           ]
         }
@@ -2879,7 +2880,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Example Clustered bar chart'"
+                  "Value": "'Cumulative vol by expected DG 3 passing per Project'"
                 }
               }
             },
@@ -2917,7 +2918,7 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Default'"
+                  "Value": "'Canvas'"
                 }
               }
             },
@@ -2932,6 +2933,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'6e8aee4300080952852c'"
                 }
               }
             }

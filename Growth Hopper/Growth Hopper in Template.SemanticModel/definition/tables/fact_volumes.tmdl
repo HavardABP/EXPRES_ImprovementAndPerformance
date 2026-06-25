@@ -190,10 +190,9 @@ table fact_volumes
 				let
 				    Source = Sql.Database("obax4o2iqosevp5oa2r6dbtune-2dhddioar5aebauc4huzjvnrve.datawarehouse.fabric.microsoft.com", "wh_gold_finance"),
 				    dbt_gold_business_plan_reporting_fact_ibm_exp_reporting_combined = Source{[Schema="dbt_gold_business_plan_reporting",Item="fact_ibm_exp_reporting_combined"]}[Data],
-				    // Filtered on latest version (dynamically based on version from dim_current_plan)
-				    #"Filtered Rows" = Table.SelectRows(dbt_gold_business_plan_reporting_fact_ibm_exp_reporting_combined, each [cost_version] = latestVersion),
+				    #"Filtered on latest version (export)" = Table.SelectRows(dbt_gold_business_plan_reporting_fact_ibm_exp_reporting_combined, each [export_name] = "2026 1H @ 2026Q2"),
 				    // Duplicate and split version into two columns
-				    #"Duplicated Column" = Table.DuplicateColumn(#"Filtered Rows", "cost_version", "cost_version - Copy"),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Filtered on latest version (export)", "cost_version", "cost_version - Copy"),
 				    #"Split Column by Position" = Table.SplitColumn(#"Duplicated Column", "cost_version - Copy", Splitter.SplitTextByPositions({0, 4}, false), {"cost_version - Copy.1", "cost_version - Copy.2"}),
 				    #"Renamed Columns" = Table.RenameColumns(#"Split Column by Position",{{"cost_version - Copy.1", "CostVersionYear"}, {"cost_version - Copy.2", "CostVersionSuffix"}}),
 				    // Filter "Measure" on Blended BOE

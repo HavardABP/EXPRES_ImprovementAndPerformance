@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "6e8aee4300080952852c",
-  "displayName": "Duplicate of DG3 Volumes",
-  "displayOption": "FitToPage",
-  "height": 1080,
-  "width": 1920,
+  "displayName": "DG Tooltip per Project",
+  "displayOption": "ActualSize",
+  "height": 190,
+  "width": 405,
   "objects": {
     "background": [
       {
@@ -14,23 +14,14 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Data Analytics Background.png'"
+                    "Value": "''"
                   }
                 }
               },
               "url": {
                 "expr": {
-                  "ResourcePackageItem": {
-                    "PackageName": "RegisteredResources",
-                    "PackageType": 1,
-                    "ItemName": "Data_Analytics_Background473562921435268.png"
-                  }
-                }
-              },
-              "scaling": {
-                "expr": {
                   "Literal": {
-                    "Value": "'Fill'"
+                    "Value": "''"
                   }
                 }
               }
@@ -46,5 +37,7 @@
         }
       }
     ]
-  }
+  },
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
 }

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "24c5a5407a2dde74ae7d",
+  "name": "2af439921efd0e425bc6",
   "position": {
-    "x": 1095,
+    "x": 323,
     "y": 210,
-    "z": 15000,
+    "z": 3000,
     "height": 60,
-    "width": 188.75,
-    "tabOrder": 15000
+    "width": 189,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fact_volumes"
+                      "Entity": "dim_projects"
                     }
                   },
-                  "Property": "product"
+                  "Property": "isProspect"
                 }
               },
-              "queryRef": "fact_volumes.product",
-              "nativeQueryRef": "product",
-              "active": true
+              "queryRef": "dim_projects.isProspect",
+              "nativeQueryRef": "Project Type",
+              "active": true,
+              "displayName": "Project Type"
             }
           ]
         }
@@ -117,56 +118,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "f",
-                    "Entity": "fact_volumes",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "f"
-                                }
-                              },
-                              "Property": "product"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'oil'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'gas'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },
@@ -239,5 +191,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "isHidden": true
 }

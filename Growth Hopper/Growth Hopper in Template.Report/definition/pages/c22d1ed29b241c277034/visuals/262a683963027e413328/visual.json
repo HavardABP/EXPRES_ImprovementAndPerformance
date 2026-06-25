@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "262a683963027e413328",
   "position": {
-    "x": 1095,
+    "x": 1445.7142857142858,
     "y": 210,
     "z": 15000,
-    "height": 60,
-    "width": 188.75,
+    "height": 60.000000000000007,
+    "width": 188.57142857142858,
     "tabOrder": 15000
   },
   "visual": {
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "fact_volumes.product",
-              "nativeQueryRef": "product",
-              "active": true
+              "nativeQueryRef": "Product",
+              "active": true,
+              "displayName": "Product"
             }
           ]
         }

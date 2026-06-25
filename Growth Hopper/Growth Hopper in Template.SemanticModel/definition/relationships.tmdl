@@ -4,14 +4,6 @@ relationship 775a79d6-4d16-93a0-04e1-cf2838b1bfe0
 	fromColumn: Visuals.'Visual Type'
 	toColumn: Images.'Visual Type'
 
-relationship AutoDetected_041e8cfb-ebf7-47cd-830b-66e83bf511d5
-	fromColumn: 'Example data'.Asset
-	toColumn: Assets.Asset
-
-relationship AutoDetected_279bd046-a16c-411f-82e1-68475d56dd50
-	fromColumn: Products.Asset
-	toColumn: Assets.Asset
-
 relationship AutoDetected_88c2ac73-23ab-43b3-95b1-b1d297ff4663
 	fromColumn: fact_volumes.project_specific_id
 	toColumn: dim_projects.project_specific_id
@@ -25,8 +17,3 @@ relationship AutoDetected_00a07a8b-ed34-4649-b4e6-29ce76b0bae3
 	fromColumn: dim_projects.asset
 	toColumn: dim_assets.asset
 
-
-relationship AutoDetected_Assets_to_dim_assets
-	crossFilteringBehavior: bothDirections
-	fromColumn: dim_assets.asset
-	toColumn: Assets.Asset

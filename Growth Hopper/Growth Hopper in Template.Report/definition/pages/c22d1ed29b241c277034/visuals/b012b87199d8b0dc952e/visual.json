@@ -61,8 +61,8 @@
                 }
               },
               "queryRef": "_MeasureTable.volume (mmboe) current year+",
-              "nativeQueryRef": "Volume (boe)",
-              "displayName": "Volume (boe)"
+              "nativeQueryRef": "Volume (mmboe)",
+              "displayName": "Volume (mmboe)"
             }
           ]
         },
@@ -80,8 +80,8 @@
                 }
               },
               "queryRef": "_MeasureTable._cumulativeP50_new",
-              "nativeQueryRef": "Cumulative Volume",
-              "displayName": "Cumulative Volume"
+              "nativeQueryRef": "Cumulative Volume (mmboe)",
+              "displayName": "Cumulative Volume (mmboe)"
             }
           ]
         }
@@ -2892,7 +2892,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Example Clustered bar chart'"
+                  "Value": "'Cumulative vol by expected DG 3 passing per Asset'"
                 }
               }
             },
@@ -2930,7 +2930,7 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Default'"
+                  "Value": "'Canvas'"
                 }
               }
             },
@@ -2945,6 +2945,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'1dccb3f1e9ded7acec75'"
                 }
               }
             }

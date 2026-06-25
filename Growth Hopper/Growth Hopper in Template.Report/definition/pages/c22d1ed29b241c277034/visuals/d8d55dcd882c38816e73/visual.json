@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d8d55dcd882c38816e73",
   "position": {
-    "x": 906.25,
+    "x": 1255.7142857142858,
     "y": 210,
     "z": 16000,
-    "height": 60,
-    "width": 188.75,
+    "height": 60.000000000000007,
+    "width": 190,
     "tabOrder": 16000
   },
   "visual": {
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "fact_volumes.production_scenario",
-              "nativeQueryRef": "production_scenario",
-              "active": true
+              "nativeQueryRef": "Production Scenario",
+              "active": true,
+              "displayName": "Production Scenario"
             }
           ]
         }
@@ -148,7 +149,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'P50'"
+                                "Value": "null"
                               }
                             }
                           ]
